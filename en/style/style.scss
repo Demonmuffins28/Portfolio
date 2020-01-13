@@ -1,5 +1,80 @@
+@import "./navbar";
+@import url("https://fonts.googleapis.com/css?family=Exo:400,800&display=swap");
+
+$greenColor: #35f425;
+
 * {
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+	font-family: "Exo", sans-serif;
+}
+
+.html,
+.body {
 	display: block;
-	padding: 0;
-	margin: 0;
+	overflow: hidden;
+}
+
+.homePage {
+	background-color: #212121;
+	height: 100vh;
+	margin-left: 60px;
+	display: grid;
+	grid-template-columns: 1.5fr 2fr;
+}
+
+.videoPlayback {
+	filter: blur(4px);
+	background-image: url("/Video/reactCode.gif");
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-width: 100%;
+	min-height: 100%;
+	grid-column-start: 2;
+}
+
+.homeHeader {
+	position: fixed;
+	z-index: 2;
+	align-self: center;
+	margin-left: 15vh;
+	margin-top: 15vh;
+
+	h1 {
+		font-weight: 800;
+		font-size: 6em;
+		line-height: 95.42%;
+		color: #f3f3f3;
+
+		span {
+			color: #35f425;
+		}
+	}
+
+	p {
+		margin-top: 2vh;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 2.2em;
+		line-height: 48px;
+		color: #999999;
+	}
+
+	button {
+		margin-top: 2vh;
+		width: 200px;
+		height: 50px;
+		border: 2px solid #35f425;
+		box-sizing: border-box;
+		color: #35f425;
+		background-color: transparent;
+		font-size: 1.3em;
+	}
+
+	button:hover {
+		cursor: pointer;
+		background-color: #35f425;
+		color: #212121;
+	}
 }

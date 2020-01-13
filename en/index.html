@@ -1,15 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 	<head>
-		<meta charset="utf-8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<title></title>
 		<meta name="description" content="" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale = 1, maximum-scale = 1, user-scalable = no"
+		/>
 		<link rel="stylesheet" href="/en/style/style.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="/en/js/navbar.js"></script>
+		<script src="/en/js/script.js"></script>
+		<script>
+			$(function() {
+				$("#nav-placeholder").load("/en/navbar.html")
+			})
+		</script>
 	</head>
 	<body>
-		<h1>This is my portfolio</h1>
-		<script src="/en/js/script.js" async defer></script>
+		<div id="nav-placeholder"></div>
+		<section class="homePage">
+			<div class="videoPlayback"></div>
+			<div class="homeHeader">
+				<h1>
+					Hey, <br />
+					I'm <span>Marco</span>,<br />
+					a web developer.
+				</h1>
+				<p>Front End Developer / Freelancer</p>
+				<button type="button">GET IN TOUCH</button>
+			</div>
+		</section>
 	</body>
 </html>
