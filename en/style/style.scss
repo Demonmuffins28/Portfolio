@@ -22,7 +22,9 @@ $greenColor: #35f425;
 	//margin-left: 60px;
 	display: grid;
 	grid-template-columns: 60px 1.5fr 2fr;
+	grid-template-rows: 1fr 2fr;
 	transition: 0.5s;
+	overflow: hidden;
 }
 
 .videoPlayback {
@@ -33,16 +35,22 @@ $greenColor: #35f425;
 	min-width: 100%;
 	min-height: 100%;
 	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	grid-row-end: 3;
 	transition: 0.5s;
+	transform: scale(1.1);
+	margin-left: 5vh;
 }
 
 .homeHeader {
-	position: fixed;
 	z-index: 2;
-	align-self: center;
 	margin-left: 25vh;
-	margin-top: 15vh;
+	margin-top: -5vh;
+	grid-row-start: 2;
+	grid-row-end: 4;
 	grid-column-start: 2;
+	grid-column-end: 4;
 	transition: 0.5s;
 
 	h1 {
@@ -116,7 +124,6 @@ $greenColor: #35f425;
 	}
 
 	.homeHeader {
-		margin-top: -20vh;
 		padding-right: 3vh;
 		grid-column-start: 1;
 

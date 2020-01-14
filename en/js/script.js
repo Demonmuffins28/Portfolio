@@ -7,9 +7,7 @@ $(document).ready(function() {
 				e.preventDefault()
 				if (e.type == "swiperight") {
 					// open menu
-					$("#nav-placeholder")
-						.css("transform", "translateX(0px)")
-						.fadeIn(1000)
+					$("#nav-placeholder").css("transform", "translateX(0px)")
 					$("#homeBody").css("margin-left", "0px")
 				} else {
 					// close/hide menu
@@ -17,6 +15,9 @@ $(document).ready(function() {
 					$("#homeBody").css("margin-left", "-60px")
 				}
 			})
+		} else {
+			$("#nav-placeholder").css("transform", "translateX(0px)")
+			$("#homeBody").css("margin-left", "0px")
 		}
 	})
 })
