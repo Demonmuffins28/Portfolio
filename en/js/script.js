@@ -3,9 +3,9 @@ $(document).ready(function() {
 
 	$(window).resize(function() {
 		if ($(window).width() <= 1100) {
-			swipe.on("swiperight swipeleft", function(e) {
+			swipe.on("panright  panleft", function(e) {
 				e.preventDefault()
-				if (e.type == "swiperight") {
+				if (e.type == "panright") {
 					// open menu
 					$("#nav-placeholder").css("transform", "translateX(0px)")
 					$("#homeBody").css("margin-left", "0px")
