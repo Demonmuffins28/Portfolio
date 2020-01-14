@@ -1,9 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Exo:400,800&display=swap");
-body {
-  display: block;
-  height: 100%;
-}
-
 .navbarBackground {
   background-color: #181818;
   width: 60px;
