@@ -10,8 +10,10 @@ $greenColor: #35f425;
 	font-family: "Exo", sans-serif;
 }
 
-.html,
-.body {
+html,
+body {
+	width: 100%;
+	height: 100%;
 	touch-action: auto;
 	display: block;
 	overflow: hidden;

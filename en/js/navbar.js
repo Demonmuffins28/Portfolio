@@ -1,44 +1,46 @@
 $(document).ready(function() {
-	$("#homePage").hover(
-		function() {
-			$("#home").text("HOME")
-		},
-		function() {
-			$("#home").html('<img class="home" src="/image/tent 1.svg" />')
-		}
-	)
-	$("#aboutPage").hover(
-		function() {
-			$("#about").text("ABOUT")
-		},
-		function() {
-			$("#about").html('<img class="about" src="/image/id-card-solid 1.svg" />')
-		}
-	)
-	$("#skillsPage").hover(
-		function() {
-			$("#skills").text("SKILLS")
-		},
-		function() {
-			$("#skills").html('<img class="skills" src="/image/knife 1.svg" />')
-		}
-	)
-	$("#workPage").hover(
-		function() {
-			$("#work").text("MY WORK")
-		},
-		function() {
-			$("#work").html('<img class="work" src="/image/axe 1.svg" />')
-		}
-	)
-	$("#contactPage").hover(
-		function() {
-			$("#contact").text("CONTACT")
-		},
-		function() {
-			$("#contact").html('<img class="contact" src="/image/contact 1.svg" />')
-		}
-	)
+	if ($(window).width() >= 700) {
+		$("#homePage").hover(
+			function() {
+				$("#home").text("HOME")
+			},
+			function() {
+				$("#home").html('<img class="home" src="/image/tent 1.svg" />')
+			}
+		)
+		$("#aboutPage").hover(
+			function() {
+				$("#about").text("ABOUT")
+			},
+			function() {
+				$("#about").html('<img class="about" src="/image/id-card-solid 1.svg" />')
+			}
+		)
+		$("#skillsPage").hover(
+			function() {
+				$("#skills").text("SKILLS")
+			},
+			function() {
+				$("#skills").html('<img class="skills" src="/image/knife 1.svg" />')
+			}
+		)
+		$("#workPage").hover(
+			function() {
+				$("#work").text("MY WORK")
+			},
+			function() {
+				$("#work").html('<img class="work" src="/image/axe 1.svg" />')
+			}
+		)
+		$("#contactPage").hover(
+			function() {
+				$("#contact").text("CONTACT")
+			},
+			function() {
+				$("#contact").html('<img class="contact" src="/image/contact 1.svg" />')
+			}
+		)
+	}
 
 	activePage()
 })
