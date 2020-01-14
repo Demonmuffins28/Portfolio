@@ -124,7 +124,6 @@ body {
   -ms-touch-action: auto;
       touch-action: auto;
   display: block;
-  overflow: hidden;
 }
 
 .homePage {
