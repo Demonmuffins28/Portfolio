@@ -12,6 +12,7 @@ $greenColor: #35f425;
 
 .html,
 .body {
+	touch-action: auto;
 	display: block;
 	overflow: hidden;
 }
