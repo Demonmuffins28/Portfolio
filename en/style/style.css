@@ -160,6 +160,12 @@
   font-size: 1.3em;
 }
 
+.aboutInfo button:hover {
+  cursor: pointer;
+  background-color: #35f425;
+  color: #212121;
+}
+
 .star {
   -ms-grid-column: 4;
       grid-column-start: 4;
@@ -232,8 +238,8 @@
   grid-column: 18;
   -ms-grid-row: 12;
   grid-row: 12;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  -webkit-animation-duration: 3.3s;
+          animation-duration: 3.3s;
 }
 
 .star .star-8 {
@@ -241,8 +247,8 @@
   grid-column: 10;
   -ms-grid-row: 5;
   grid-row: 5;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  -webkit-animation-duration: 4.2s;
+          animation-duration: 4.2s;
 }
 
 .shine {

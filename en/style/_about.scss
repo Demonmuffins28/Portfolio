@@ -42,6 +42,12 @@ $greenColor: #35f425;
 		background-color: transparent;
 		font-size: 1.3em;
 	}
+
+	button:hover {
+		cursor: pointer;
+		background-color: #35f425;
+		color: #212121;
+	}
 }
 
 .star {
@@ -92,13 +98,13 @@ $greenColor: #35f425;
 	.star-7 {
 		grid-column: 18;
 		grid-row: 12;
-		animation-duration: 3s;
+		animation-duration: 3.3s;
 	}
 
 	.star-8 {
 		grid-column: 10;
 		grid-row: 5;
-		animation-duration: 3s;
+		animation-duration: 4.2s;
 	}
 }
 

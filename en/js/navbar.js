@@ -50,7 +50,7 @@ function activePage() {
 	if (fileName == "index.html") {
 		$("#homePage").toggleClass("activePage")
 	} else if (fileName == "about.html") {
-		$("#aboutPage").toggleClass("aactivePage")
+		$("#aboutPage").toggleClass("activePage")
 	} else if (fileName == "skills.html") {
 		$("#skillsPage").toggleClass("activePage")
 	} else if (fileName == "work.html") {
