@@ -1,3 +1,7 @@
+$(window).on("load", function() {
+	$("#loading-screen").slideUp("slow")
+})
+
 $(document).ready(function() {
 	var swipe = new Hammer(document)
 
