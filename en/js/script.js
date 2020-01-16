@@ -1,8 +1,15 @@
-$(window).on("load", function() {
-	$("#loading-screen").slideUp("slow")
-})
+// $(window).on("load", function() {
+// 	$("#loading-screen").slideUp(1500)
+// })
+
+// $(window).unload(function() {
+// 	alert("Unload called")
+// 	//$("#loading-screen").slideDown(1500)
+// })
 
 $(document).ready(function() {
+	//$("#loading-screen").slideUp(1500)
+
 	var swipe = new Hammer(document)
 
 	if ($(window).width() <= 1100) {
@@ -109,4 +116,25 @@ $(document).ready(function() {
 			$(".star-8").css("grid-row", randomRow)
 		}, 4200)
 	}
+
+	glitching()
 })
+
+function glitching() {
+	var bg = $(".myName")[0]
+	var count = 5
+	for (var i = 0; i < count; i++) {
+		var glitchBox = document.createElement("::after")
+		glitchBox.className = "box"
+		bg.appendChild(glitchBox)
+	}
+	//setInterval(function() {
+	// var glitch = $(".box")
+	// for (var i = 0; i < glitch.length; i++) {
+	// 	glitch[i].style.left = Math.floor(Math.random() * 60) + "%"
+	// 	glitch[i].style.top = Math.floor(Math.random() * 60) + "%"
+	// 	glitch[i].style.width = Math.floor(Math.random() * 150) + "px"
+	// 	glitch[i].style.height = Math.floor(Math.random() * 50) + "px"
+	// }
+	//}, 400)
+}
