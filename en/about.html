@@ -17,6 +17,7 @@
 		></script>
 		<script src="/en/js/navbar.js"></script>
 		<script src="/en/js/script.js"></script>
+		<script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
 
 		<script>
 			$(function() {
@@ -29,41 +30,47 @@
 	</head>
 
 	<body>
-		<div id="loading-screen"></div>
+		<!-- <div id="loading-screen"></div> -->
 		<div id="nav-placeholder"></div>
-		<section id="aboutBody" class="aboutPage">
-			<div class="star">
-				<img class="star-1 shine" src="/image/stars.png" />
-				<img class="star-2 shine" src="/image/stars.png" />
-				<img class="star-3 shine" src="/image/stars.png" />
-				<img class="star-4 shine" src="/image/stars.png" />
-				<img class="star-5 shine" src="/image/stars.png" />
-				<img class="star-6 shine" src="/image/stars.png" />
-				<img class="star-7 shine" src="/image/stars.png" />
-				<img class="star-8 shine" src="/image/stars.png" />
-			</div>
-			<div class="aboutInfo">
-				<h1>
-					Who am I?
-				</h1>
-				<p>
-					I’m Marc-Olivier Lalonde, a software developer working in web development and design as a
-					freelancer. I’m passionate about building excellent websites that stand out from the rest.
-					I love using new technologies and trying new and crazy ideas for the world to see.
-					<br /><br />
-					I’m a backcountry and Jeep lover! I want to go and camp at all the most amazing scenic
-					places in the world. However, when I’m not coding or in my Jeep, I’m playing video games
-					to blow off steam.
-					<br /><br />
-					My job is to design and build your website so that it represents you or your business
-					while making sure it’s eye-pleasing, user-friendly and tailored to your needs. If you have
-					a project or a business that needs web exposure then that’s where I come in! Let’s get to
-					work!
-				</p>
-				<button onclick="window.location.href = '/en/index.html'" class="aboutButton" type="button">
-					LET'S TALK
-				</button>
-			</div>
-		</section>
+		<main id="swup" class="transition-fade">
+			<section id="aboutBody" class="aboutPage">
+				<div class="star">
+					<img class="star-1 shine" src="/image/stars.png" />
+					<img class="star-2 shine" src="/image/stars.png" />
+					<img class="star-3 shine" src="/image/stars.png" />
+					<img class="star-4 shine" src="/image/stars.png" />
+					<img class="star-5 shine" src="/image/stars.png" />
+					<img class="star-6 shine" src="/image/stars.png" />
+					<img class="star-7 shine" src="/image/stars.png" />
+					<img class="star-8 shine" src="/image/stars.png" />
+				</div>
+				<div class="aboutInfo">
+					<h1>
+						Who am I?
+					</h1>
+					<p>
+						I’m Marc-Olivier Lalonde, a software developer working in web development and design as
+						a freelancer. I’m passionate about building excellent websites that stand out from the
+						rest. I love using new technologies and trying new and crazy ideas for the world to see.
+						<br /><br />
+						I’m a backcountry and Jeep lover! I want to go and camp at all the most amazing scenic
+						places in the world. However, when I’m not coding or in my Jeep, I’m playing video games
+						to blow off steam.
+						<br /><br />
+						My job is to design and build your website so that it represents you or your business
+						while making sure it’s eye-pleasing, user-friendly and tailored to your needs. If you
+						have a project or a business that needs web exposure then that’s where I come in! Let’s
+						get to work!
+					</p>
+					<button
+						onclick="window.location.href = '/en/index.html'"
+						class="aboutButton"
+						type="button"
+					>
+						LET'S TALK
+					</button>
+				</div>
+			</section>
+		</main>
 	</body>
 </html>

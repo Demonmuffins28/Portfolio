@@ -18,6 +18,7 @@
 		<script src="js/loadingScreen.js"></script>
 		<script src="/en/js/navbar.js"></script>
 		<script src="/en/js/script.js"></script>
+		<script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
 
 		<script>
 			$(function() {
@@ -31,19 +32,42 @@
 	<body>
 		<!-- <div id="loading-screen"></div> -->
 		<div id="nav-placeholder"></div>
-		<section id="homeBody" class="homePage">
-			<div class="videoPlayback"></div>
-			<div class="homeHeader">
-				<h1>
-					Hey, <br />
-					I'm <span class="myName" data-text="Marco">Marco</span>,<br />
-					a web developer.
-				</h1>
-				<p>Front End Developer / Freelancer</p>
-				<button onclick="window.location.href = '/en/about.html'" type="button">
-					GET IN TOUCH
-				</button>
-			</div>
-		</section>
+		<main id="swup" class="transition-fade">
+			<section id="homeBody" class="homePage">
+				<div class="videoPlayback"></div>
+				<div class="homeHeader">
+					<h1>
+						<span class="text-animated" data-text="H">H</span
+						><span class="text-animated" data-text="e">e</span
+						><span class="text-animated" data-text="y">y</span
+						><span class="text-animated" data-text=",">,</span>
+						<br />
+						<span class="text-animated" data-text="I">I</span
+						><span class="text-animated" data-text="'">'</span
+						><span class="text-animated" data-text="m">m</span>
+						<span class="myName" data-text="Marco">Marco</span
+						><span class="text-animated" data-text=",">,</span><br />
+						<span class="text-animated" data-text="a">a</span>
+						<span class="text-animated" data-text="w">w</span
+						><span class="text-animated" data-text="e">e</span
+						><span class="text-animated" data-text="b">b</span>
+						<span class="text-animated" data-text="d">d</span
+						><span class="text-animated" data-text="e">e</span
+						><span class="text-animated" data-text="v">v</span
+						><span class="text-animated" data-text="e">e</span
+						><span class="text-animated" data-text="l">l</span
+						><span class="text-animated" data-text="o">o</span
+						><span class="text-animated" data-text="p">p</span
+						><span class="text-animated" data-text="e">e</span
+						><span class="text-animated" data-text="r">r</span
+						><span class="text-animated" data-text=".">.</span>
+					</h1>
+					<p>Front End Developer / Freelancer</p>
+					<button onclick="window.location.href = '/en/about.html'" type="button">
+						GET IN TOUCH
+					</button>
+				</div>
+			</section>
+		</main>
 	</body>
 </html>

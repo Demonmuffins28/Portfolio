@@ -18,14 +18,27 @@ body {
 	height: 100%;
 	display: block;
 	//overflow: hidden;
+	background: #212121;
+}
+
+main {
+	height: 100%;
+}
+
+.transition-fade {
+	transition: 0.4s;
+	opacity: 1;
+}
+
+html.is-animating .transition-fade {
+	opacity: 0;
 }
 
 .homePage {
 	background-color: #212121;
 	height: 100vh;
-	//margin-left: 60px;
 	display: grid;
-	grid-template-columns: 60px 1.5fr 2fr;
+	grid-template-columns: 0px 1.5fr 2fr;
 	grid-template-rows: 1fr 2fr;
 	transition: 0.5s;
 	overflow: hidden;
@@ -63,7 +76,7 @@ body {
 		line-height: 95.42%;
 		color: #f3f3f3;
 
-		span {
+		.myName {
 			color: #35f425;
 			position: relative;
 		}
@@ -90,19 +103,7 @@ body {
 			}
 		}
 
-		// .box {
-		// 	content: "Marco";
-		// 	position: absolute;
-		// 	left: 0;
-		// 	text-shadow: 1px 0 red;
-		// 	top: 18px;
-		// 	background: #35f425;
-		// 	//filter: blur(4px);
-		// 	overflow: hidden;
-		// 	animation: noise-anim 2s infinite linear alternate-reverse;
-		// }
-
-		span::after {
+		.myName::after {
 			@include glitchCopy;
 			left: -2px;
 			text-shadow: -2px 0 #00fff9, 2px 2px #ff00c1;
@@ -119,7 +120,7 @@ body {
 			}
 		}
 
-		span::before {
+		.myName::before {
 			@include glitchCopy;
 			left: 2px;
 			text-shadow: -2px 0 #ff00c1;
@@ -136,6 +137,41 @@ body {
 				}
 			}
 		}
+
+		.text-animated:hover {
+			position: relative;
+		}
+
+		.text-animated:hover {
+			animation: glitch-skew 1s infinite linear alternate-reverse;
+		}
+
+		.text-animated:hover::after {
+			@include glitchCopy;
+			left: -2px;
+			text-shadow: -2px 0 #00fff9, 2px 2px #ff00c1;
+			animation: glitch-anim 1s infinite linear alternate-reverse;
+		}
+
+		.text-animated:hover::before {
+			@include glitchCopy;
+			left: 2px;
+			text-shadow: -2px 0 #ff00c1;
+			clip: rect(44px, 450px, 56px, 0);
+			animation: glitch-anim2 5s infinite linear alternate-reverse;
+		}
+
+		// .box {
+		// 	content: "Marco";
+		// 	position: absolute;
+		// 	left: 0;
+		// 	text-shadow: 1px 0 red;
+		// 	top: 18px;
+		// 	background: #35f425;
+		// 	//filter: blur(4px);
+		// 	overflow: hidden;
+		// 	animation: noise-anim 2s infinite linear alternate-reverse;
+		// }
 	}
 
 	p {

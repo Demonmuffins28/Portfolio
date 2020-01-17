@@ -1,15 +1,12 @@
-// $(window).on("load", function() {
-// 	$("#loading-screen").slideUp(1500)
-// })
+import Swup from "swup"
+const swup = new Swup() // only this line when included with script tag
 
-// $(window).unload(function() {
-// 	alert("Unload called")
-// 	//$("#loading-screen").slideDown(1500)
-// })
+init()
 
-$(document).ready(function() {
-	//$("#loading-screen").slideUp(1500)
+swup.on("contentReplaced", init)
 
+function init() {
+	// For navbar hiding on smaller screen
 	var swipe = new Hammer(document)
 
 	if ($(window).width() <= 1100) {
@@ -18,16 +15,16 @@ $(document).ready(function() {
 			if (e.type == "panright") {
 				// open menu
 				$("#nav-placeholder").css("transform", "translateX(0px)")
-				$("#homeBody").css("margin-left", "0px")
+				$("#homeBody").css("margin-left", "60px")
 			} else {
 				// close/hide menu
 				$("#nav-placeholder").css("transform", "translateX(-60px)")
-				$("#homeBody").css("margin-left", "-60px")
+				$("#homeBody").css("margin-left", "0px")
 			}
 		})
 	} else {
 		$("#nav-placeholder").css("transform", "translateX(0px)")
-		$("#homeBody").css("margin-left", "0px")
+		$("#homeBody").css("margin-left", "60px")
 	}
 
 	$(window).resize(function() {
@@ -118,7 +115,7 @@ $(document).ready(function() {
 	}
 
 	glitching()
-})
+}
 
 function glitching() {
 	var bg = $(".myName")[0]
@@ -128,6 +125,7 @@ function glitching() {
 		glitchBox.className = "box"
 		bg.appendChild(glitchBox)
 	}
+	// Make a glitchy effect for the full page (full image usualy)
 	//setInterval(function() {
 	// var glitch = $(".box")
 	// for (var i = 0; i < glitch.length; i++) {
