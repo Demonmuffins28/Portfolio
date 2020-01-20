@@ -1,5 +1,19 @@
-import Swup from "swup"
-const swup = new Swup() // only this line when included with script tag
+// import Swup from "swup"
+// const swup = new Swup() // only this line when included with script tag
+
+// swup
+var swup = new Swup({
+	elements: [".swup"]
+})
+
+// show status on swup => contentReplaced
+var statusDiv = document.querySelector(".status")
+swup.on("contentReplaced", function(event) {
+	statusDiv.innerText = "SWUP Status: content changed!"
+	setTimeout(function() {
+		statusDiv.innerText = "SWUP Status:"
+	}, 1000)
+})
 
 init()
 
