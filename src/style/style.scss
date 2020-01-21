@@ -6,260 +6,288 @@
 $greenColor: #35f425;
 
 * {
-	box-sizing: border-box;
-	padding: 0px;
-	margin: 0px;
-	font-family: "Exo", sans-serif;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Exo", sans-serif;
 }
 
 html,
 body {
-	width: 100%;
-	height: 100%;
-	display: block;
-	//overflow: hidden;
-	background: #212121;
+  width: 100%;
+  height: 100%;
+  display: block;
+  //overflow: hidden;
+  background: #212121;
 }
 
 main {
-	height: 100%;
+  height: 100%;
 }
 
 .transition-fade {
-	transition: 0.4s;
-	opacity: 1;
+  transition: 0.4s;
+  opacity: 1;
 }
 
 html.is-animating .transition-fade {
-	opacity: 0;
+  opacity: 0;
 }
 
 .homePage {
-	margin-left: 60px;
-	background-color: #212121;
-	height: 100vh;
-	display: grid;
-	grid-template-columns: 0px 1.5fr 2fr;
-	grid-template-rows: 1fr 2fr;
-	transition: 0.5s;
-	overflow: hidden;
+  margin-left: 60px;
+  background-color: #212121;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 0px 1.5fr 2fr;
+  grid-template-rows: 1fr 2fr;
+  transition: 0.5s;
+  overflow: hidden;
 }
 
 .videoPlayback {
-	filter: blur(4px);
-	background-image: url("/Video/reactCode.gif");
-	background-repeat: no-repeat;
-	background-size: cover;
-	min-width: 100%;
-	min-height: 100%;
-	grid-column-start: 3;
-	grid-column-end: 4;
-	grid-row-start: 1;
-	grid-row-end: 3;
-	transition: 0.5s;
-	transform: scale(1.1);
-	margin-left: 5vh;
+  filter: blur(4px);
+  background-image: url("/Video/reactCode.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 100%;
+  min-height: 100%;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  transition: 0.5s;
+  transform: scale(1.1);
+  margin-left: 5vh;
 }
 
 .homeHeader {
-	z-index: 2;
-	margin-left: 25vh;
-	margin-top: -5vh;
-	grid-row-start: 2;
-	grid-row-end: 4;
-	grid-column-start: 2;
-	grid-column-end: 4;
-	transition: 0.5s;
+  z-index: 2;
+  margin-left: 25vh;
+  margin-top: -5vh;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  transition: 0.5s;
 
-	h1 {
-		font-weight: 800;
-		font-size: 6em;
-		line-height: 95.42%;
-		color: #f3f3f3;
+  h1 {
+    font-weight: 800;
+    font-size: 6em;
+    line-height: 95.42%;
+    color: #f3f3f3;
 
-		.myName {
-			color: #35f425;
-			position: relative;
-		}
+    .myName {
+      color: #35f425;
+      position: relative;
+    }
 
-		@mixin glitchCopy {
-			content: attr(data-text);
-			position: absolute;
-			top: 18px;
-			left: 0;
-			width: 100%;
-			height: 100%;
-		}
+    @mixin glitchCopy {
+      content: attr(data-text);
+      position: absolute;
+      top: 18px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
 
-		.myName {
-			animation: glitch-skew 1s infinite linear alternate-reverse;
-		}
+    .myName {
+      animation: glitch-skew 1s infinite linear alternate-reverse;
+    }
 
-		@keyframes glitch-skew {
-			$steps: 10;
-			@for $i from 0 through $steps {
-				#{percentage($i*(1/$steps))} {
-					transform: skew((random(10) - 5) + deg);
-				}
-			}
-		}
+    @keyframes glitch-skew {
+      $steps: 10;
+      @for $i from 0 through $steps {
+        #{percentage($i*(1/$steps))} {
+          transform: skew((random(10) - 5) + deg);
+        }
+      }
+    }
 
-		.myName::after {
-			@include glitchCopy;
-			left: -2px;
-			text-shadow: -2px 0 #00fff9, 2px 2px #ff00c1;
-			animation: glitch-anim 1s infinite linear alternate-reverse;
-		}
+    .myName::after {
+      @include glitchCopy;
+      left: -2px;
+      text-shadow: -2px 0 #00fff9, 2px 2px #ff00c1;
+      animation: glitch-anim 1s infinite linear alternate-reverse;
+    }
 
-		@keyframes glitch-anim {
-			$steps: 20;
-			@for $i from 0 through $steps {
-				#{percentage($i*(1/$steps))} {
-					clip: rect(random(100) + px, 9999px, random(100) + px, 0);
-					transform: skew((random(100) / 100) + deg);
-				}
-			}
-		}
+    @keyframes glitch-anim {
+      $steps: 20;
+      @for $i from 0 through $steps {
+        #{percentage($i*(1/$steps))} {
+          clip: rect(random(100) + px, 9999px, random(100) + px, 0);
+          transform: skew((random(100) / 100) + deg);
+        }
+      }
+    }
 
-		.myName::before {
-			@include glitchCopy;
-			left: 2px;
-			text-shadow: -2px 0 #ff00c1;
-			clip: rect(44px, 450px, 56px, 0);
-			animation: glitch-anim2 5s infinite linear alternate-reverse;
-		}
+    .myName::before {
+      @include glitchCopy;
+      left: 2px;
+      text-shadow: -2px 0 #ff00c1;
+      clip: rect(44px, 450px, 56px, 0);
+      animation: glitch-anim2 5s infinite linear alternate-reverse;
+    }
 
-		@keyframes glitch-anim2 {
-			$steps: 20;
-			@for $i from 0 through $steps {
-				#{percentage($i*(1/$steps))} {
-					clip: rect(random(100) + px, 9999px, random(100) + px, 0);
-					transform: skew((random(100) / 100) + deg);
-				}
-			}
-		}
+    @keyframes glitch-anim2 {
+      $steps: 20;
+      @for $i from 0 through $steps {
+        #{percentage($i*(1/$steps))} {
+          clip: rect(random(100) + px, 9999px, random(100) + px, 0);
+          transform: skew((random(100) / 100) + deg);
+        }
+      }
+    }
 
-		.text-animated:hover {
-			position: relative;
-		}
+    .text-animated:hover {
+      position: relative;
+    }
 
-		.text-animated:hover {
-			animation: glitch-skew 1s infinite linear alternate-reverse;
-		}
+    .text-animated:hover {
+      animation: glitch-skew 1s infinite linear alternate-reverse;
+    }
 
-		.text-animated:hover::after {
-			@include glitchCopy;
-			left: -2px;
-			text-shadow: -2px 0 #00fff9, 2px 2px #ff00c1;
-			animation: glitch-anim 1s infinite linear alternate-reverse;
-		}
+    .text-animated:hover::after {
+      @include glitchCopy;
+      left: -2px;
+      text-shadow: -2px 0 #00fff9, 2px 2px #ff00c1;
+      animation: glitch-anim 1s infinite linear alternate-reverse;
+    }
 
-		.text-animated:hover::before {
-			@include glitchCopy;
-			left: 2px;
-			text-shadow: -2px 0 #ff00c1;
-			clip: rect(44px, 450px, 56px, 0);
-			animation: glitch-anim2 5s infinite linear alternate-reverse;
-		}
+    .text-animated:hover::before {
+      @include glitchCopy;
+      left: 2px;
+      text-shadow: -2px 0 #ff00c1;
+      clip: rect(44px, 450px, 56px, 0);
+      animation: glitch-anim2 5s infinite linear alternate-reverse;
+    }
 
-		// .box {
-		// 	content: "Marco";
-		// 	position: absolute;
-		// 	left: 0;
-		// 	text-shadow: 1px 0 red;
-		// 	top: 18px;
-		// 	background: #35f425;
-		// 	//filter: blur(4px);
-		// 	overflow: hidden;
-		// 	animation: noise-anim 2s infinite linear alternate-reverse;
-		// }
-	}
+    // .box {
+    // 	content: "Marco";
+    // 	position: absolute;
+    // 	left: 0;
+    // 	text-shadow: 1px 0 red;
+    // 	top: 18px;
+    // 	background: #35f425;
+    // 	//filter: blur(4px);
+    // 	overflow: hidden;
+    // 	animation: noise-anim 2s infinite linear alternate-reverse;
+    // }
+  }
 
-	p {
-		margin-top: 2vh;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 2.2em;
-		line-height: 48px;
-		color: #999999;
-	}
+  p {
+    margin-top: 2vh;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.2em;
+    line-height: 48px;
+    color: #999999;
+  }
 
-	button {
-		margin-top: 2vh;
-		width: 200px;
-		height: 50px;
-		border: 2px solid #35f425;
-		box-sizing: border-box;
-		color: #35f425;
-		background-color: transparent;
-		font-size: 1.3em;
-	}
+  button {
+    margin-top: 2vh;
+    width: 200px;
+    height: 50px;
+    border: 2px solid #35f425;
+    box-sizing: border-box;
+    color: #35f425;
+    background-color: transparent;
+    font-size: 1.3em;
+  }
 
-	button:hover {
-		cursor: pointer;
-		background-color: #35f425;
-		color: #212121;
-	}
+  button:hover {
+    cursor: pointer;
+    background-color: #35f425;
+    color: #212121;
+  }
 }
 
 #nav-placeholder {
-	transition: 0.5s;
+  transition: 0.5s;
 }
 
 #loading-screen {
-	width: 100%;
-	height: 100%;
-	z-index: 50;
-	position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  position: absolute;
 }
 
 @media screen and (max-width: 1100px) {
-	.homePage {
-		margin-left: -60px;
-	}
+  .homePage {
+    margin-left: -60px;
+  }
 
-	.homeHeader {
-		margin-left: 15vh;
-	}
+  .homeHeader {
+    margin-left: 15vh;
+  }
 
-	#nav-placeholder {
-		transform: translateX(-60px);
-		transition: 0.5s;
-	}
+  #nav-placeholder {
+    transform: translateX(-60px);
+    transition: 0.5s;
+  }
 }
 
 @media screen and (max-width: 700px) {
-	.homePage {
-		grid-template-columns: 1fr 2fr;
-		overflow: hidden;
-	}
+  .homePage {
+    grid-template-columns: 1fr 2fr;
+    overflow: hidden;
+  }
 
-	.videoPlayback {
-		grid-column-start: 2;
-		margin-left: 5vh;
-		margin-top: 5vh;
-		background-size: 800px, 6000px;
-	}
+  .videoPlayback {
+    grid-column-start: 2;
+    margin-left: 5vh;
+    margin-top: 5vh;
+    background-size: 800px, 6000px;
+  }
 
-	.homeHeader {
-		padding-right: 3vh;
-		grid-column-start: 1;
+  .homeHeader {
+    padding-right: 3vh;
+    grid-column-start: 1;
 
-		h1 {
-			font-size: 3em;
-		}
+    h1 {
+      font-size: 3em;
+    }
 
-		p {
-			font-size: 1.2em;
-			line-height: 20px;
-			margin-top: 5vh;
-			margin-bottom: 2vh;
-		}
+    p {
+      font-size: 1.2em;
+      line-height: 20px;
+      margin-top: 5vh;
+      margin-bottom: 2vh;
+    }
 
-		button {
-			width: 125px;
-			height: 35px;
-			font-size: 1em;
-		}
-	}
+    button {
+      width: 125px;
+      height: 35px;
+      font-size: 1em;
+    }
+  }
+
+  .homeHeader {
+    h1 {
+      .myName::after {
+        top: 10px;
+        left: 0px;
+        text-shadow: -2px 0 #00fff9, 2px 2px #ff00c1;
+      }
+
+      .myName::before {
+        top: 10px;
+        left: 0px;
+        text-shadow: 2px 0 #ff00c1;
+      }
+
+      .text-animated:hover::after {
+        top: 10px;
+        left: 0px;
+        text-shadow: -2px 0 #00fff9, 2px 2px #ff00c1;
+      }
+
+      .text-animated:hover::before {
+        top: 10px;
+        left: 0px;
+        text-shadow: 2px 0 #ff00c1;
+      }
+    }
+  }
 }

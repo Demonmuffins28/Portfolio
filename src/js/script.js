@@ -20,7 +20,7 @@ function init() {
       } else {
         // close/hide menu
         $("#nav-placeholder").css("transform", "translateX(-60px)");
-        $("#homeBody").css("margin-left", "0px");
+        $("#homeBody").css("margin-left", "-60px");
       }
     });
   } else {

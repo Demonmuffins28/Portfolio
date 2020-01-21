@@ -139,7 +139,7 @@ function init() {
       } else {
         // close/hide menu
         $("#nav-placeholder").css("transform", "translateX(-60px)");
-        $("#homeBody").css("margin-left", "0px");
+        $("#homeBody").css("margin-left", "-60px");
       }
     });
   } else {
@@ -274,7 +274,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54795" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55252" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
