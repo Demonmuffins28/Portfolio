@@ -1,0 +1,1 @@
+{"version":3,"sources":["js/loadingScreen.js"],"names":["$","window","on","slideUp"],"mappings":";AAAAA,EAAEC,QAAQC,GAAG,OAAQ,WACpBF,EAAE,mBAAmBG,QAAQ","file":"loadingScreen.97373625.js","sourceRoot":"..\\src","sourcesContent":["$(window).on(\"load\", function() {\r\n\t$(\".loader-wrapper\").slideUp(\"slow\")\r\n})\r\n"]}

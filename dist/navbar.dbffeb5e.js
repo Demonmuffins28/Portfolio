@@ -118,39 +118,50 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"js/navbar.js":[function(require,module,exports) {
-$(document).ready(function () {
+var swup = new Swup(); // only this line when included with script tag
+
+var tentHTML = $("#home").html();
+var cardHTML = $("#about").html();
+var knifeHTML = $("#skills").html();
+var axeHTML = $("#work").html();
+var contactHTML = $("#contact").html();
+init();
+swup.on("contentReplaced", init);
+
+function init() {
   if ($(window).width() >= 700) {
     $("#homePage").hover(function () {
       $("#home").text("HOME");
     }, function () {
-      $("#home").html('<img class="home" src="/image/tent 1.svg" />');
+      $("#home").html(tentHTML); //$("#home").html('<img class="home" src="../image/tent 1.*.svg" />');
     });
     $("#aboutPage").hover(function () {
       $("#about").text("ABOUT");
     }, function () {
-      $("#about").html('<img class="about" src="/image/id-card-solid 1.svg" />');
+      $("#about").html(cardHTML); //$("#about").html('<img class="about" src="../image/id-card-solid 1.svg" />');
     });
     $("#skillsPage").hover(function () {
       $("#skills").text("SKILLS");
     }, function () {
-      $("#skills").html('<img class="skills" src="/image/knife 1.svg" />');
+      $("#skills").html(knifeHTML); //$("#skills").html('<img class="skills" src="../image/knife 1.svg" />');
     });
     $("#workPage").hover(function () {
       $("#work").text("MY WORK");
     }, function () {
-      $("#work").html('<img class="work" src="/image/axe 1.svg" />');
+      $("#work").html(axeHTML); //$("#work").html('<img class="work" src="../image/axe 1.svg" />');
     });
     $("#contactPage").hover(function () {
       $("#contact").text("CONTACT");
     }, function () {
-      $("#contact").html('<img class="contact" src="/image/contact 1.svg" />');
+      $("#contact").html(contactHTML); //$("#contact").html('<img class="contact" src="../image/contact 1.svg" />');
     });
   }
 
   activePage();
-});
+}
 
 function activePage() {
+  $(".activePage").toggleClass("activePage");
   var fileName = location.pathname.split("/").slice(-1);
 
   if (fileName == "index.html") {
@@ -193,7 +204,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64254" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52070" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
