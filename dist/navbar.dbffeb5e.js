@@ -127,6 +127,7 @@ var axeHTML = $("#work").html();
 var contactHTML = $("#contact").html();
 init();
 swup.on("contentReplaced", init);
+swup.on("contentReplaced", activePage);
 
 function init() {
   if ($(window).width() >= 700) {
@@ -156,8 +157,6 @@ function init() {
       $("#contact").html(contactHTML); //$("#contact").html('<img class="contact" src="../image/contact 1.svg" />');
     });
   }
-
-  activePage();
 }
 
 function activePage() {
@@ -204,7 +203,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54287" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54795" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
