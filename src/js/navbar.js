@@ -9,6 +9,7 @@ const contactHTML = $("#contact").html();
 init();
 
 swup.on("contentReplaced", init);
+swup.on("contentReplaced", activePage);
 
 function init() {
   if ($(window).width() >= 700) {
@@ -58,8 +59,6 @@ function init() {
       }
     );
   }
-
-  activePage();
 }
 
 function activePage() {
