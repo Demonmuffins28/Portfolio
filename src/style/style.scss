@@ -34,13 +34,14 @@ html.is-animating .transition-fade {
 	opacity: 0;
 }
 
-.transition-popin {
-	visibility: visible;
-}
+// .transition-popin {
+// 	transition: 2s;
+// 	opacity: 1;
+// }
 
-html.is-animating .transition-popin {
-	visibility: hidden;
-}
+// html.is-animating .transition-popin {
+// 	opacity: 0;
+// }
 
 .homePage {
 	margin-left: 60px;
