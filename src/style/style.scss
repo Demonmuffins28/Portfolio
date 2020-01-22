@@ -34,6 +34,15 @@ html.is-animating .transition-fade {
 	opacity: 0;
 }
 
+.transition-popin {
+	transition-delay: 2s;
+	opacity: 1;
+}
+
+html.is-animating .transition-popin {
+	opacity: 0;
+}
+
 .homePage {
 	margin-left: 60px;
 	background-color: #212121;
@@ -211,32 +220,6 @@ html.is-animating .transition-fade {
 	height: 100%;
 	z-index: 50;
 	position: absolute;
-}
-
-.typewriter {
-	overflow: hidden; /* Ensures the content is not revealed until the animation */
-	animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
-}
-
-/* The typing effect */
-@keyframes typing {
-	from {
-		width: 0;
-	}
-	to {
-		width: 100%;
-	}
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-	from,
-	to {
-		border-color: transparent;
-	}
-	50% {
-		border-color: orange;
-	}
 }
 
 @media screen and (max-width: 1100px) {
