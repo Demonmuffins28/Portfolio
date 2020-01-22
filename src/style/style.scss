@@ -35,12 +35,12 @@ html.is-animating .transition-fade {
 }
 
 .transition-popin {
-	transition: 2s;
-	opacity: 1;
+	transition: 1s;
+	visibility: visible;
 }
 
 html.is-animating .transition-popin {
-	opacity: 0;
+	visibility: hidden;
 }
 
 .homePage {
