@@ -40,7 +40,6 @@ function init() {
 	let counter = 0
 
 	;(function eachLetter(letterIndex) {
-		alert("Letter function called")
 		// Have the function for each letter queue and change letter
 		$(".text-animated")
 			.addClass("myName")

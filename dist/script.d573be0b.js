@@ -130,8 +130,7 @@ function init() {
   var counter = 0;
 
   (function eachLetter(letterIndex) {
-    alert("Letter function called"); // Have the function for each letter queue and change letter
-
+    // Have the function for each letter queue and change letter
     $(".text-animated").addClass("myName").css("color", "#f3f3f3");
     setTimeout(function () {
       ;
