@@ -118,26 +118,35 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"js/typingAnimation.js":[function(require,module,exports) {
-var characters = ["&", "#", "*", "+", "%", "?", "£", "@", "§", "$"]; //animateText()
+var characters = ["&", "#", "*", "+", "%", "?", "£", "@", "§", "$"];
+var originalLetter = ["H", "e", "y", ",", "I", "'", "m", "M", "a", "r", "c", "o", ",", "a", "w", "e", "b", "d", "e", "v", "e", "l", "o", "p", "e", "r", "."]; //animateText()
 //swup.on("contentReplaced", animateText)
 
 $(document).ready(function () {});
 var nthChild = 1;
-/***************************LEAN TO USE PROMISES FOR THIS TO WORK (waiting for setTimeout to finish) */
+var counter = 0;
 
 (function eachLetter(letterIndex) {
   // Have the function for each letter queue and change letter
+  $(".text-animated").addClass("myName").css("color", "#f3f3f3");
   setTimeout(function () {
+    ;
+
     (function loadHeader(nthChild, i) {
       // let each letter go through ~10 random signs
       setTimeout(function () {
         var randomNbr = Math.floor(Math.random() * (characters.length - 1 - 0 + 1)) + 0;
-        $(".text-animated:nth-child(" + nthChild + ")").text(characters[randomNbr]);
+        $(".text-data" + nthChild).css("visibility", "visible");
+        $(".text-data" + nthChild).text(characters[randomNbr]);
 
         if (--i) {
           loadHeader(nthChild, i);
+        } else {
+          $(".text-data" + nthChild).text(originalLetter[counter]);
+          counter++;
+          if (counter > 25) $(".text-animated").removeClass("myName");
         }
-      }, 25);
+      }, 75);
     })(nthChild, characters.length);
 
     nthChild++;
@@ -145,9 +154,9 @@ var nthChild = 1;
     if (--letterIndex) {
       eachLetter(letterIndex);
     }
-  }, 150);
-})(25);
-},{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+  }, 55);
+})(27);
+},{}],"../../../../../../Local Files - No Backup/Node/node-v12.14.1-win-x64/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -175,7 +184,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55252" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52685" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -351,5 +360,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/typingAnimation.js"], null)
+},{}]},{},["../../../../../../Local Files - No Backup/Node/node-v12.14.1-win-x64/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/typingAnimation.js"], null)
 //# sourceMappingURL=/typingAnimation.d31494a8.js.map

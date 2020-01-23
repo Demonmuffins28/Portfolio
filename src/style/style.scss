@@ -85,6 +85,7 @@ html.is-animating .transition-fade {
 		.myName {
 			color: #35f425;
 			position: relative;
+			visibility: hidden;
 		}
 
 		@mixin glitchCopy {
@@ -144,7 +145,8 @@ html.is-animating .transition-fade {
 			}
 		}
 
-		.text-animated:hover {
+		.text-animated {
+			visibility: hidden;
 			position: relative;
 		}
 
