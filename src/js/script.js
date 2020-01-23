@@ -36,7 +36,6 @@ init()
 swup.on("contentReplaced", init)
 
 function init() {
-	eachLetter(27)
 	// For navbar hiding on smaller screen
 	var swipe = new Hammer(document)
 
@@ -198,4 +197,4 @@ let counter = 0
 			eachLetter(letterIndex)
 		}
 	}, 55)
-})
+})(27)

@@ -126,8 +126,7 @@ init();
 swup.on("contentReplaced", init);
 
 function init() {
-  eachLetter(27); // For navbar hiding on smaller screen
-
+  // For navbar hiding on smaller screen
   var swipe = new Hammer(document);
 
   if ($(window).width() <= 1100) {
@@ -282,7 +281,7 @@ var counter = 0;
       eachLetter(letterIndex);
     }
   }, 55);
-});
+})(27);
 },{}],"../../../../../../Local Files - No Backup/Node/node-v12.14.1-win-x64/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
