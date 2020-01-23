@@ -128,7 +128,39 @@ swup.on("contentReplaced", init);
 function init() {
   var nthChild = 1;
   var counter = 0;
-  eachLetter(27); // For navbar hiding on smaller screen
+
+  (function eachLetter(letterIndex) {
+    alert("Letter function called"); // Have the function for each letter queue and change letter
+
+    $(".text-animated").addClass("myName").css("color", "#f3f3f3");
+    setTimeout(function () {
+      ;
+
+      (function loadHeader(nthChild, i) {
+        // let each letter go through ~10 random signs
+        setTimeout(function () {
+          var randomNbr = Math.floor(Math.random() * (characters.length - 1 - 0 + 1)) + 0;
+          $(".text-data" + nthChild).css("visibility", "visible");
+          $(".text-data" + nthChild).text(characters[randomNbr]);
+
+          if (--i) {
+            loadHeader(nthChild, i);
+          } else {
+            $(".text-data" + nthChild).text(originalLetter[counter]);
+            counter++;
+            if (counter > 25) $(".text-animated").removeClass("myName");
+          }
+        }, 75);
+      })(nthChild, characters.length);
+
+      nthChild++;
+
+      if (--letterIndex) {
+        eachLetter(letterIndex);
+      }
+    }, 55);
+  }); // For navbar hiding on smaller screen
+
 
   var swipe = new Hammer(document);
 
@@ -250,40 +282,6 @@ function init() {
 // }
 //}, 400)
 // }
-
-
-;
-
-(function eachLetter(letterIndex) {
-  // Have the function for each letter queue and change letter
-  $(".text-animated").addClass("myName").css("color", "#f3f3f3");
-  setTimeout(function () {
-    ;
-
-    (function loadHeader(nthChild, i) {
-      // let each letter go through ~10 random signs
-      setTimeout(function () {
-        var randomNbr = Math.floor(Math.random() * (characters.length - 1 - 0 + 1)) + 0;
-        $(".text-data" + nthChild).css("visibility", "visible");
-        $(".text-data" + nthChild).text(characters[randomNbr]);
-
-        if (--i) {
-          loadHeader(nthChild, i);
-        } else {
-          $(".text-data" + nthChild).text(originalLetter[counter]);
-          counter++;
-          if (counter > 25) $(".text-animated").removeClass("myName");
-        }
-      }, 75);
-    })(nthChild, characters.length);
-
-    nthChild++;
-
-    if (--letterIndex) {
-      eachLetter(letterIndex);
-    }
-  }, 55);
-});
 },{}],"../../../../../../Local Files - No Backup/Node/node-v12.14.1-win-x64/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
