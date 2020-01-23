@@ -156,6 +156,7 @@ function init() {
 
       if (--letterIndex) {
         eachLetter(letterIndex);
+        alert("called text function");
       }
     }, 55);
   })(27); // For navbar hiding on smaller screen

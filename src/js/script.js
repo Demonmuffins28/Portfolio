@@ -65,6 +65,7 @@ function init() {
 
 			if (--letterIndex) {
 				eachLetter(letterIndex)
+				alert("called text function")
 			}
 		}, 55)
 	})(27)
