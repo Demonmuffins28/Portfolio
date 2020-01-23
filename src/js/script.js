@@ -36,6 +36,8 @@ init()
 swup.on("contentReplaced", init)
 
 function init() {
+	let nthChild = 1
+	let counter = 0
 	eachLetter(27)
 	// For navbar hiding on smaller screen
 	var swipe = new Hammer(document)
@@ -166,9 +168,6 @@ function init() {
 // }
 //}, 400)
 // }
-
-let nthChild = 1
-let counter = 0
 
 ;(function eachLetter(letterIndex) {
 	// Have the function for each letter queue and change letter
