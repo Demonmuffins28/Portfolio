@@ -1,43 +1,34 @@
-const characters = ["&", "#", "*", "+", "%", "?", "£", "@", "§", "$"]
+const characters = ["&", "#", "*", "+", "%", "?", "£", "@", "§", "$"];
 //animateText()
 
 //swup.on("contentReplaced", animateText)
 
-$(document).ready(function() {
-	setTimeout(setInterval(animateFlow, 20), 250)
+$(document).ready(function() {});
 
-	// setInterval(function() {
-	// 	let numberLetters = 0
-	// 	let counter = 0
-	// 	if (numberLetters == 25) {
-	// 		clearInterval()
-	// 	} else {
-	// 		numberLetters++
-	// 		$(".myName").text(numberLetters)
+let nthChild = 1;
 
-	// 		setInterval(function() {
-	// 			if (counter == 9) {
-	// 				$(".text-animated:nth-child(" + numberLetters + ")").text("H")
-	// 			} else {
-	// 				let randomNbr = Math.floor(Math.random() * (characters.length - 1 - 0 + 1)) + 0
-	// 				$(".text-animated:nth-child(" + numberLetters + ")").text(counter)
-	// 				counter++
-	// 			}
-	// 		}, 50)
-	// 	}
-	// }, 250)
-})
+/***************************LEAN TO USE PROMISES FOR THIS TO WORK (waiting for setTimeout to finish) */
+(function eachLetter(letterIndex) {
+  // Have the function for each letter queue and change letter
+  setTimeout(() => {
+    (function loadHeader(nthChild, i) {
+      // let each letter go through ~10 random signs
+      setTimeout(() => {
+        let randomNbr =
+          Math.floor(Math.random() * (characters.length - 1 - 0 + 1)) + 0;
+        $(".text-animated:nth-child(" + nthChild + ")").text(
+          characters[randomNbr]
+        );
 
-function animateFlow() {
-	const numberOfLetter = 25
-	for (let i = 1; i < numberOfLetter; i++) {
-		loadHeader(2)
-	}
-}
+        if (--i) {
+          loadHeader(nthChild, i);
+        }
+      }, 25);
+    })(nthChild, characters.length);
+    nthChild++;
 
-function loadHeader(nthChild) {
-	for (let i = 0; i < characters.length; i++) {
-		let randomNbr = Math.floor(Math.random() * (characters.length - 1 - 0 + 1)) + 0
-		$(".text-animated:nth-child(" + nthChild + ")").text(characters[randomNbr])
-	}
-}
+    if (--letterIndex) {
+      eachLetter(letterIndex);
+    }
+  }, 150);
+})(25);

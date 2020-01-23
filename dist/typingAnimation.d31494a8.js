@@ -121,43 +121,33 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 var characters = ["&", "#", "*", "+", "%", "?", "£", "@", "§", "$"]; //animateText()
 //swup.on("contentReplaced", animateText)
 
-$(document).ready(function () {
-  setTimeout(setInterval(animateFlow, 20), 250); // setInterval(function() {
-  // 	let numberLetters = 0
-  // 	let counter = 0
-  // 	if (numberLetters == 25) {
-  // 		clearInterval()
-  // 	} else {
-  // 		numberLetters++
-  // 		$(".myName").text(numberLetters)
-  // 		setInterval(function() {
-  // 			if (counter == 9) {
-  // 				$(".text-animated:nth-child(" + numberLetters + ")").text("H")
-  // 			} else {
-  // 				let randomNbr = Math.floor(Math.random() * (characters.length - 1 - 0 + 1)) + 0
-  // 				$(".text-animated:nth-child(" + numberLetters + ")").text(counter)
-  // 				counter++
-  // 			}
-  // 		}, 50)
-  // 	}
-  // }, 250)
-});
+$(document).ready(function () {});
+var nthChild = 1;
+/***************************LEAN TO USE PROMISES FOR THIS TO WORK (waiting for setTimeout to finish) */
 
-function animateFlow() {
-  var numberOfLetter = 25;
+(function eachLetter(letterIndex) {
+  // Have the function for each letter queue and change letter
+  setTimeout(function () {
+    (function loadHeader(nthChild, i) {
+      // let each letter go through ~10 random signs
+      setTimeout(function () {
+        var randomNbr = Math.floor(Math.random() * (characters.length - 1 - 0 + 1)) + 0;
+        $(".text-animated:nth-child(" + nthChild + ")").text(characters[randomNbr]);
 
-  for (var i = 1; i < numberOfLetter; i++) {
-    loadHeader(2);
-  }
-}
+        if (--i) {
+          loadHeader(nthChild, i);
+        }
+      }, 25);
+    })(nthChild, characters.length);
 
-function loadHeader(nthChild) {
-  for (var i = 0; i < characters.length; i++) {
-    var randomNbr = Math.floor(Math.random() * (characters.length - 1 - 0 + 1)) + 0;
-    $(".text-animated:nth-child(" + nthChild + ")").text(characters[randomNbr]);
-  }
-}
-},{}],"../../../../../../Local Files - No Backup/Node/node-v12.14.1-win-x64/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+    nthChild++;
+
+    if (--letterIndex) {
+      eachLetter(letterIndex);
+    }
+  }, 150);
+})(25);
+},{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -185,7 +175,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59832" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55252" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -361,5 +351,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../../../Local Files - No Backup/Node/node-v12.14.1-win-x64/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/typingAnimation.js"], null)
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/typingAnimation.js"], null)
 //# sourceMappingURL=/typingAnimation.d31494a8.js.map
