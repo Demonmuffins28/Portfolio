@@ -28,11 +28,6 @@ const originalLetter = [
 	"r",
 	"."
 ]
-//animateText()
-
-//swup.on("contentReplaced", animateText)
-
-$(document).ready(function() {})
 
 let nthChild = 1
 let counter = 0

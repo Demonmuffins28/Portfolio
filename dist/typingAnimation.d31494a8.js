@@ -119,10 +119,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   return newRequire;
 })({"js/typingAnimation.js":[function(require,module,exports) {
 var characters = ["&", "#", "*", "+", "%", "?", "£", "@", "§", "$"];
-var originalLetter = ["H", "e", "y", ",", "I", "'", "m", "M", "a", "r", "c", "o", ",", "a", "w", "e", "b", "d", "e", "v", "e", "l", "o", "p", "e", "r", "."]; //animateText()
-//swup.on("contentReplaced", animateText)
-
-$(document).ready(function () {});
+var originalLetter = ["H", "e", "y", ",", "I", "'", "m", "M", "a", "r", "c", "o", ",", "a", "w", "e", "b", "d", "e", "v", "e", "l", "o", "p", "e", "r", "."];
 var nthChild = 1;
 var counter = 0;
 
