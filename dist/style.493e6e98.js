@@ -117,7 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"../../../../../../Local Files - No Backup/Node/node-v12.14.1-win-x64/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+})({"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -149,7 +149,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],"../../../../../../Local Files - No Backup/Node/node-v12.14.1-win-x64/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+},{}],"../node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -184,12 +184,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../../../../../../Local Files - No Backup/Node/node-v12.14.1-win-x64/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"style/style.css":[function(require,module,exports) {
+},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"style/style.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\image\\Component3.png":[["Component3.f7a08054.png","image/Component3.png"],"image/Component3.png"],"C:\\Users\\lalonm\\Documents\\GitHub\\Portfolio\\src\\Video\\reactCode.gif":[["reactCode.c9f8e92c.gif","Video/reactCode.gif"],"Video/reactCode.gif"],"_css_loader":"../../../../../../Local Files - No Backup/Node/node-v12.14.1-win-x64/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../../../../Local Files - No Backup/Node/node-v12.14.1-win-x64/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./..\\image\\Component3.png":[["Component3.f7a08054.png","image/Component3.png"],"image/Component3.png"],"C:\\Users\\marco\\OneDrive\\Documents\\GitHub\\Portfolio\\src\\Video\\reactCode.gif":[["reactCode.c9f8e92c.gif","Video/reactCode.gif"],"Video/reactCode.gif"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52685" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64844" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -393,5 +393,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../../../Local Files - No Backup/Node/node-v12.14.1-win-x64/node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
 //# sourceMappingURL=/style.493e6e98.js.map
