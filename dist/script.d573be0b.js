@@ -124,6 +124,7 @@ var characters = ["&", "#", "*", "+", "%", "?", "£", "@", "§", "$"];
 var originalLetter = ["H", "e", "y", ",", "I", "'", "m", "M", "a", "r", "c", "o", ",", "a", "w", "e", "b", "d", "e", "v", "e", "l", "o", "p", "e", "r", "."];
 init();
 swup.on("contentReplaced", init);
+/** This is not getting recalled every time it comes back */
 
 function init() {
   // For navbar hiding on smaller screen
@@ -228,6 +229,8 @@ function init() {
     }, 4200);
   } //glitching();
 
+
+  testit();
 } // function glitching() {
 //   var bg = $(".myName")[0];
 //   var count = 5;
@@ -249,39 +252,42 @@ function init() {
 // }
 
 
-var nthChild = 1;
-var counter = 0;
+function testit() {
+  alert("TEST");
+  var nthChild = 1;
+  var counter = 0;
 
-(function eachLetter(letterIndex) {
-  // Have the function for each letter queue and change letter
-  $(".text-animated").addClass("myName").css("color", "#f3f3f3");
-  setTimeout(function () {
-    ;
+  (function eachLetter(letterIndex) {
+    // Have the function for each letter queue and change letter
+    $(".text-animated").addClass("myName").css("color", "#f3f3f3");
+    setTimeout(function () {
+      ;
 
-    (function loadHeader(nthChild, i) {
-      // let each letter go through ~10 random signs
-      setTimeout(function () {
-        var randomNbr = Math.floor(Math.random() * (characters.length - 1 - 0 + 1)) + 0;
-        $(".text-data" + nthChild).css("visibility", "visible");
-        $(".text-data" + nthChild).text(characters[randomNbr]);
+      (function loadHeader(nthChild, i) {
+        // let each letter go through ~10 random signs
+        setTimeout(function () {
+          var randomNbr = Math.floor(Math.random() * (characters.length - 1 - 0 + 1)) + 0;
+          $(".text-data" + nthChild).css("visibility", "visible");
+          $(".text-data" + nthChild).text(characters[randomNbr]);
 
-        if (--i) {
-          loadHeader(nthChild, i);
-        } else {
-          $(".text-data" + nthChild).text(originalLetter[counter]);
-          counter++;
-          if (counter > 25) $(".text-animated").removeClass("myName");
-        }
-      }, 75);
-    })(nthChild, characters.length);
+          if (--i) {
+            loadHeader(nthChild, i);
+          } else {
+            $(".text-data" + nthChild).text(originalLetter[counter]);
+            counter++;
+            if (counter > 25) $(".text-animated").removeClass("myName");
+          }
+        }, 75);
+      })(nthChild, characters.length);
 
-    nthChild++;
+      nthChild++;
 
-    if (--letterIndex) {
-      eachLetter(letterIndex);
-    }
-  }, 55);
-})(27);
+      if (--letterIndex) {
+        eachLetter(letterIndex);
+      }
+    }, 55);
+  })(27);
+}
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -310,7 +316,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64844" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51824" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
