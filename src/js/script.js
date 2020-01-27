@@ -145,7 +145,7 @@ function init() {
 		}, 4200)
 	}
 	//glitching();
-	testit()
+	animateHeader()
 }
 
 // function glitching() {
@@ -168,8 +168,7 @@ function init() {
 //}, 400)
 // }
 
-function testit() {
-	alert("TEST")
+function animateHeader() {
 
 	let nthChild = 1
 	let counter = 0
