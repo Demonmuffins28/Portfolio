@@ -10,22 +10,6 @@
 			content="width=device-width, initial-scale = 1, maximum-scale = 1, user-scalable = no"
 		/>
 		<link rel="stylesheet" href="./style/style.css" />
-		<script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
-		<script
-			type="text/javascript"
-			src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"
-		></script>
-		<script src="./js/navbar.js"></script>
-		<script src="./js/script.js"></script>
-
-		<script>
-			$(function() {
-				$("#nav-placeholder").load("./navbar.html")
-			})
-			$(function() {
-				$("#loading-screen").load("./loadingScreen.html")
-			})
-		</script>
 	</head>
 
 	<body>
@@ -48,24 +32,37 @@
 						Who am I?
 					</h1>
 					<p>
-						I’m Marc-Olivier Lalonde, a software developer working in web development and design as
-						a freelancer. I’m passionate about building excellent websites that stand out from the
-						rest. I love using new technologies and trying new and crazy ideas for the world to see.
-						<br /><br />
-						I’m a backcountry and Jeep lover! I want to go and camp at all the most amazing scenic
-						places in the world. However, when I’m not coding or in my Jeep, I’m playing video games
-						to blow off steam.
-						<br /><br />
+						I’m <span>Marc-Olivier Lalonde</span>, a software developer working in web development
+						and design as a freelancer. I’m passionate about building excellent websites that stand
+						out from the rest. I love using new technologies and trying new and crazy ideas for the
+						world to see. <br /><br />
+						I’m a <span>backcountry</span> and <span>Jeep</span> lover! I want to go and camp at all
+						the most amazing scenic places in the world. However, when I’m not coding or in my Jeep,
+						I’m playing <span>video games</span> to blow off steam. <br /><br />
 						My job is to design and build your website so that it represents you or your business
 						while making sure it’s eye-pleasing, user-friendly and tailored to your needs. If you
 						have a project or a business that needs web exposure then that’s where I come in! Let’s
 						get to work!
 					</p>
-					<button onclick="window.location.href = './index.html'" class="aboutButton" type="button">
-						LET'S TALK
-					</button>
+					<a href="./index.html" class="button">
+						<svg>
+							<rect x="0" y="0" fill="none" width="100%" height="100%" /></svg
+						>LET'S TALK
+					</a>
 				</div>
 			</section>
 		</main>
+		<script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
+		<script
+			type="text/javascript"
+			src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+		></script>
+		<script src="./js/script.js"></script>
+
+		<script>
+			$(function() {
+				$("#nav-placeholder").load("./navbar.html")
+			})
+		</script>
 	</body>
 </html>

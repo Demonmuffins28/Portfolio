@@ -1,7 +1,7 @@
 @import "./navbar";
 @import "./about";
-@import "./loadingScreen";
 @import url("https://fonts.googleapis.com/css?family=Exo:400,800&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Damion&display=swap");
 
 $greenColor: #35f425;
 
@@ -191,21 +191,43 @@ html.is-animating .transition-fade {
 		color: #999999;
 	}
 
-	button {
-		margin-top: 2vh;
-		width: 200px;
-		height: 50px;
-		border: 2px solid #35f425;
-		box-sizing: border-box;
+	.button {
+		position: absolute;
+		text-decoration: none;
 		color: #35f425;
-		background-color: transparent;
 		font-size: 1.3em;
+		margin-top: 1em;
+		margin-left: 0.5em;
+		width: 160px;
+
+		svg {
+			margin-top: -0.5em;
+			margin-left: -0.5em;
+			position: absolute;
+			height: 45px;
+			width: 160px;
+		}
+
+		rect {
+			fill: none;
+			stroke: #35f425;
+			stroke-width: 2;
+			stroke-dasharray: 422, 0;
+			transition: all 0.35s linear;
+		}
 	}
 
-	button:hover {
+	.button:hover {
 		cursor: pointer;
-		background-color: #35f425;
-		color: #212121;
+		background-color: none;
+		font-weight: 600;
+
+		rect {
+			stroke-width: 5;
+			stroke-dasharray: 15, 310;
+			stroke-dashoffset: 48;
+			transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+		}
 	}
 }
 

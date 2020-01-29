@@ -1,3 +1,4 @@
+import Swup from "swup"
 const swup = new Swup() // only this line when included with script tag
 
 const characters = ["&", "#", "*", "+", "%", "?", "£", "@", "§", "$"]
@@ -30,12 +31,26 @@ const originalLetter = [
 	"r",
 	"."
 ]
+const tentHTML = $("#home").html()
+const cardHTML = $("#about").html()
+const knifeHTML = $("#skills").html()
+const axeHTML = $("#work").html()
+const contactHTML = $("#contact").html()
 
 init()
+navbar()
 
-swup.on("contentReplaced", init)
+swup.on("contentReplaced", function() {
+	// Run these every contentReplace
+	navbar()
+	activePage()
 
-/** This is not getting recalled every time it comes back */
+	// Run this only on homepage
+	if (document.querySelector("#homeBody")) {
+		init()
+	}
+})
+
 function init() {
 	// For navbar hiding on smaller screen
 	var swipe = new Hammer(document)
@@ -169,10 +184,11 @@ function init() {
 // }
 
 function animateHeader() {
-
 	let nthChild = 1
 	let counter = 0
 
+	$(".text-animated").css("visibility", "hidden")
+	$(".myName").css("visibility", "hidden")
 	;(function eachLetter(letterIndex) {
 		// Have the function for each letter queue and change letter
 		$(".text-animated")
@@ -202,4 +218,70 @@ function animateHeader() {
 			}
 		}, 55)
 	})(27)
+}
+
+function navbar() {
+	if ($(window).width() >= 700) {
+		$("#homePage").hover(
+			function() {
+				$("#home").text("HOME")
+			},
+			function() {
+				$("#home").html(tentHTML)
+				//$("#home").html('<img class="home" src="../image/tent 1.*.svg" />');
+			}
+		)
+		$("#aboutPage").hover(
+			function() {
+				$("#about").text("ABOUT")
+			},
+			function() {
+				$("#about").html(cardHTML)
+				//$("#about").html('<img class="about" src="../image/id-card-solid 1.svg" />');
+			}
+		)
+		$("#skillsPage").hover(
+			function() {
+				$("#skills").text("SKILLS")
+			},
+			function() {
+				$("#skills").html(knifeHTML)
+				//$("#skills").html('<img class="skills" src="../image/knife 1.svg" />');
+			}
+		)
+		$("#workPage").hover(
+			function() {
+				$("#work").text("MY WORK")
+			},
+			function() {
+				$("#work").html(axeHTML)
+				//$("#work").html('<img class="work" src="../image/axe 1.svg" />');
+			}
+		)
+		$("#contactPage").hover(
+			function() {
+				$("#contact").text("CONTACT")
+			},
+			function() {
+				$("#contact").html(contactHTML)
+				//$("#contact").html('<img class="contact" src="../image/contact 1.svg" />');
+			}
+		)
+	}
+}
+
+function activePage() {
+	$(".activePage").toggleClass("activePage")
+	var fileName = location.pathname.split("/").slice(-1)
+	if (fileName == "index.html") {
+		$("#homePage").toggleClass("activePage")
+	} else if (fileName == "about.html") {
+		$("#aboutPage").toggleClass("activePage")
+	} else if (fileName == "skills.html") {
+		$("#skillsPage").toggleClass("activePage")
+	} else if (fileName == "work.html") {
+		$("#workPage").toggleClass("activePage")
+	} else if (fileName == "contact.html") {
+		$("#contactPage").toggleClass("activePage")
+	}
 }
