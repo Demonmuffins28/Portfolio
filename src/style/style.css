@@ -138,8 +138,6 @@
 }
 
 .aboutInfo h1 {
-  -webkit-transform: skew(-10deg);
-          transform: skew(-10deg);
   color: #35f425;
   font-weight: 800;
   font-size: 6em;
@@ -338,6 +336,11 @@
       grid-template-columns: 1fr 1fr;
 }
 
+.aboutInfo h1 {
+  white-space: nowrap;
+  font-size: 5em;
+}
+
 .output {
   display: -ms-grid;
   display: grid;
@@ -367,7 +370,7 @@ body {
 
 .sublime-text {
   margin: 60px auto 50px auto;
-  width: 550px;
+  width: 80%;
   overflow: visible;
   -webkit-transform: scale(0);
           transform: scale(0);
@@ -425,7 +428,7 @@ body {
   height: 100%;
   width: 30px;
   position: absolute;
-  padding-left: 8px;
+  padding-left: 10px;
   background-color: #2e2e2f;
   border-radius: 10px 0 0 7px;
 }
@@ -433,7 +436,7 @@ body {
 .sublime-text .screen .left-bar:after {
   position: absolute;
   top: 24px;
-  content: ". . . . . . . . . .";
+  content: ". . . . . . . . . . . . . . . . . . . .";
   color: #59595b;
   font-size: 42px;
   line-height: 20px;
@@ -463,27 +466,27 @@ body {
 }
 
 .sublime-text .screen .code .row p.green {
-  width: 65px;
+  width: 28%;
   background-color: #5ec3af;
 }
 
 .sublime-text .screen .code .row p.orange {
-  width: 119px;
+  width: 19%;
   background-color: #ff8f8f;
 }
 
 .sublime-text .screen .code .row p.blue {
-  width: 99px;
+  width: 19%;
   background-color: #43c7f4;
 }
 
 .sublime-text .screen .code .row p.purple {
-  width: 49px;
+  width: 29%;
   background-color: #9e76b4;
 }
 
 .sublime-text .screen .code .row p.yellow {
-  width: 74px;
+  width: 22%;
   background-color: #ffcc4e;
 }
 
@@ -497,8 +500,8 @@ body {
   margin-left: 1px;
   background-color: #e6e7e8;
   width: 2px;
-  -webkit-animation: blink 1s ease 4.6s infinite;
-          animation: blink 1s ease 4.6s infinite;
+  -webkit-animation: blink 1s ease 8s infinite;
+          animation: blink 1s ease 8s infinite;
 }
 
 /* sublime text */
@@ -594,318 +597,723 @@ body {
 }
 
 .row3 > p:nth-child(1) {
-  -webkit-animation: show-text 100ms ease 1900ms forwards;
-          animation: show-text 100ms ease 1900ms forwards;
+  -webkit-animation: show-text 100ms ease 6300ms forwards;
+          animation: show-text 100ms ease 6300ms forwards;
 }
 
 .row3 > p:nth-child(2) {
-  -webkit-animation: show-text 100ms ease 2000ms forwards;
-          animation: show-text 100ms ease 2000ms forwards;
+  -webkit-animation: show-text 100ms ease 6400ms forwards;
+          animation: show-text 100ms ease 6400ms forwards;
 }
 
 .row3 > p:nth-child(3) {
-  -webkit-animation: show-text 100ms ease 2100ms forwards;
-          animation: show-text 100ms ease 2100ms forwards;
+  -webkit-animation: show-text 100ms ease 6500ms forwards;
+          animation: show-text 100ms ease 6500ms forwards;
 }
 
 .row3 > p:nth-child(4) {
-  -webkit-animation: show-text 100ms ease 2200ms forwards;
-          animation: show-text 100ms ease 2200ms forwards;
+  -webkit-animation: show-text 100ms ease 6600ms forwards;
+          animation: show-text 100ms ease 6600ms forwards;
 }
 
 .row3 > p:nth-child(5) {
-  -webkit-animation: show-text 100ms ease 2300ms forwards;
-          animation: show-text 100ms ease 2300ms forwards;
+  -webkit-animation: show-text 100ms ease 6700ms forwards;
+          animation: show-text 100ms ease 6700ms forwards;
 }
 
 .row3 > p:nth-child(6) {
-  -webkit-animation: show-text 100ms ease 2400ms forwards;
-          animation: show-text 100ms ease 2400ms forwards;
+  -webkit-animation: show-text 100ms ease 6800ms forwards;
+          animation: show-text 100ms ease 6800ms forwards;
 }
 
 .row3 > p:nth-child(7) {
-  -webkit-animation: show-text 100ms ease 2500ms forwards;
-          animation: show-text 100ms ease 2500ms forwards;
+  -webkit-animation: show-text 100ms ease 6900ms forwards;
+          animation: show-text 100ms ease 6900ms forwards;
 }
 
 .row3 > p:nth-child(8) {
-  -webkit-animation: show-text 100ms ease 2600ms forwards;
-          animation: show-text 100ms ease 2600ms forwards;
+  -webkit-animation: show-text 100ms ease 7000ms forwards;
+          animation: show-text 100ms ease 7000ms forwards;
 }
 
 .row3 > p:nth-child(9) {
-  -webkit-animation: show-text 100ms ease 2700ms forwards;
-          animation: show-text 100ms ease 2700ms forwards;
+  -webkit-animation: show-text 100ms ease 7100ms forwards;
+          animation: show-text 100ms ease 7100ms forwards;
 }
 
 .row4 > p:nth-child(1) {
-  -webkit-animation: show-text 100ms ease 2300ms forwards;
-          animation: show-text 100ms ease 2300ms forwards;
+  -webkit-animation: show-text 100ms ease 6700ms forwards;
+          animation: show-text 100ms ease 6700ms forwards;
 }
 
 .row4 > p:nth-child(2) {
-  -webkit-animation: show-text 100ms ease 2400ms forwards;
-          animation: show-text 100ms ease 2400ms forwards;
+  -webkit-animation: show-text 100ms ease 6800ms forwards;
+          animation: show-text 100ms ease 6800ms forwards;
 }
 
 .row4 > p:nth-child(3) {
-  -webkit-animation: show-text 100ms ease 2500ms forwards;
-          animation: show-text 100ms ease 2500ms forwards;
+  -webkit-animation: show-text 100ms ease 6900ms forwards;
+          animation: show-text 100ms ease 6900ms forwards;
 }
 
 .row4 > p:nth-child(4) {
-  -webkit-animation: show-text 100ms ease 2600ms forwards;
-          animation: show-text 100ms ease 2600ms forwards;
+  -webkit-animation: show-text 100ms ease 7000ms forwards;
+          animation: show-text 100ms ease 7000ms forwards;
 }
 
 .row4 > p:nth-child(5) {
-  -webkit-animation: show-text 100ms ease 2700ms forwards;
-          animation: show-text 100ms ease 2700ms forwards;
+  -webkit-animation: show-text 100ms ease 7100ms forwards;
+          animation: show-text 100ms ease 7100ms forwards;
 }
 
 .row4 > p:nth-child(6) {
-  -webkit-animation: show-text 100ms ease 2800ms forwards;
-          animation: show-text 100ms ease 2800ms forwards;
+  -webkit-animation: show-text 100ms ease 7200ms forwards;
+          animation: show-text 100ms ease 7200ms forwards;
 }
 
 .row4 > p:nth-child(7) {
-  -webkit-animation: show-text 100ms ease 2900ms forwards;
-          animation: show-text 100ms ease 2900ms forwards;
+  -webkit-animation: show-text 100ms ease 7300ms forwards;
+          animation: show-text 100ms ease 7300ms forwards;
 }
 
 .row4 > p:nth-child(8) {
-  -webkit-animation: show-text 100ms ease 3000ms forwards;
-          animation: show-text 100ms ease 3000ms forwards;
+  -webkit-animation: show-text 100ms ease 7400ms forwards;
+          animation: show-text 100ms ease 7400ms forwards;
 }
 
 .row4 > p:nth-child(9) {
-  -webkit-animation: show-text 100ms ease 3100ms forwards;
-          animation: show-text 100ms ease 3100ms forwards;
+  -webkit-animation: show-text 100ms ease 7500ms forwards;
+          animation: show-text 100ms ease 7500ms forwards;
 }
 
 .row5 > p:nth-child(1) {
-  -webkit-animation: show-text 100ms ease 2700ms forwards;
-          animation: show-text 100ms ease 2700ms forwards;
+  -webkit-animation: show-text 100ms ease 3900ms forwards;
+          animation: show-text 100ms ease 3900ms forwards;
 }
 
 .row5 > p:nth-child(2) {
-  -webkit-animation: show-text 100ms ease 2800ms forwards;
-          animation: show-text 100ms ease 2800ms forwards;
+  -webkit-animation: show-text 100ms ease 4000ms forwards;
+          animation: show-text 100ms ease 4000ms forwards;
 }
 
 .row5 > p:nth-child(3) {
-  -webkit-animation: show-text 100ms ease 2900ms forwards;
-          animation: show-text 100ms ease 2900ms forwards;
+  -webkit-animation: show-text 100ms ease 4100ms forwards;
+          animation: show-text 100ms ease 4100ms forwards;
 }
 
 .row5 > p:nth-child(4) {
-  -webkit-animation: show-text 100ms ease 3000ms forwards;
-          animation: show-text 100ms ease 3000ms forwards;
+  -webkit-animation: show-text 100ms ease 4200ms forwards;
+          animation: show-text 100ms ease 4200ms forwards;
 }
 
 .row5 > p:nth-child(5) {
-  -webkit-animation: show-text 100ms ease 3100ms forwards;
-          animation: show-text 100ms ease 3100ms forwards;
+  -webkit-animation: show-text 100ms ease 4300ms forwards;
+          animation: show-text 100ms ease 4300ms forwards;
 }
 
 .row5 > p:nth-child(6) {
-  -webkit-animation: show-text 100ms ease 3200ms forwards;
-          animation: show-text 100ms ease 3200ms forwards;
+  -webkit-animation: show-text 100ms ease 4400ms forwards;
+          animation: show-text 100ms ease 4400ms forwards;
 }
 
 .row5 > p:nth-child(7) {
-  -webkit-animation: show-text 100ms ease 3300ms forwards;
-          animation: show-text 100ms ease 3300ms forwards;
+  -webkit-animation: show-text 100ms ease 4500ms forwards;
+          animation: show-text 100ms ease 4500ms forwards;
 }
 
 .row5 > p:nth-child(8) {
-  -webkit-animation: show-text 100ms ease 3400ms forwards;
-          animation: show-text 100ms ease 3400ms forwards;
+  -webkit-animation: show-text 100ms ease 4600ms forwards;
+          animation: show-text 100ms ease 4600ms forwards;
 }
 
 .row5 > p:nth-child(9) {
-  -webkit-animation: show-text 100ms ease 3500ms forwards;
-          animation: show-text 100ms ease 3500ms forwards;
+  -webkit-animation: show-text 100ms ease 4700ms forwards;
+          animation: show-text 100ms ease 4700ms forwards;
 }
 
 .row6 > p:nth-child(1) {
-  -webkit-animation: show-text 100ms ease 3100ms forwards;
-          animation: show-text 100ms ease 3100ms forwards;
+  -webkit-animation: show-text 100ms ease 4300ms forwards;
+          animation: show-text 100ms ease 4300ms forwards;
 }
 
 .row6 > p:nth-child(2) {
-  -webkit-animation: show-text 100ms ease 3200ms forwards;
-          animation: show-text 100ms ease 3200ms forwards;
+  -webkit-animation: show-text 100ms ease 4400ms forwards;
+          animation: show-text 100ms ease 4400ms forwards;
 }
 
 .row6 > p:nth-child(3) {
-  -webkit-animation: show-text 100ms ease 3300ms forwards;
-          animation: show-text 100ms ease 3300ms forwards;
+  -webkit-animation: show-text 100ms ease 4500ms forwards;
+          animation: show-text 100ms ease 4500ms forwards;
 }
 
 .row6 > p:nth-child(4) {
-  -webkit-animation: show-text 100ms ease 3400ms forwards;
-          animation: show-text 100ms ease 3400ms forwards;
+  -webkit-animation: show-text 100ms ease 4600ms forwards;
+          animation: show-text 100ms ease 4600ms forwards;
 }
 
 .row6 > p:nth-child(5) {
-  -webkit-animation: show-text 100ms ease 3500ms forwards;
-          animation: show-text 100ms ease 3500ms forwards;
+  -webkit-animation: show-text 100ms ease 4700ms forwards;
+          animation: show-text 100ms ease 4700ms forwards;
 }
 
 .row6 > p:nth-child(6) {
-  -webkit-animation: show-text 100ms ease 3600ms forwards;
-          animation: show-text 100ms ease 3600ms forwards;
-}
-
-.row6 > p:nth-child(7) {
-  -webkit-animation: show-text 100ms ease 3700ms forwards;
-          animation: show-text 100ms ease 3700ms forwards;
-}
-
-.row6 > p:nth-child(8) {
-  -webkit-animation: show-text 100ms ease 3800ms forwards;
-          animation: show-text 100ms ease 3800ms forwards;
-}
-
-.row6 > p:nth-child(9) {
-  -webkit-animation: show-text 100ms ease 3900ms forwards;
-          animation: show-text 100ms ease 3900ms forwards;
-}
-
-.row7 > p:nth-child(1) {
-  -webkit-animation: show-text 100ms ease 3500ms forwards;
-          animation: show-text 100ms ease 3500ms forwards;
-}
-
-.row7 > p:nth-child(2) {
-  -webkit-animation: show-text 100ms ease 3600ms forwards;
-          animation: show-text 100ms ease 3600ms forwards;
-}
-
-.row7 > p:nth-child(3) {
-  -webkit-animation: show-text 100ms ease 3700ms forwards;
-          animation: show-text 100ms ease 3700ms forwards;
-}
-
-.row7 > p:nth-child(4) {
-  -webkit-animation: show-text 100ms ease 3800ms forwards;
-          animation: show-text 100ms ease 3800ms forwards;
-}
-
-.row7 > p:nth-child(5) {
-  -webkit-animation: show-text 100ms ease 3900ms forwards;
-          animation: show-text 100ms ease 3900ms forwards;
-}
-
-.row7 > p:nth-child(6) {
-  -webkit-animation: show-text 100ms ease 4000ms forwards;
-          animation: show-text 100ms ease 4000ms forwards;
-}
-
-.row7 > p:nth-child(7) {
-  -webkit-animation: show-text 100ms ease 4100ms forwards;
-          animation: show-text 100ms ease 4100ms forwards;
-}
-
-.row7 > p:nth-child(8) {
-  -webkit-animation: show-text 100ms ease 4200ms forwards;
-          animation: show-text 100ms ease 4200ms forwards;
-}
-
-.row7 > p:nth-child(9) {
-  -webkit-animation: show-text 100ms ease 4300ms forwards;
-          animation: show-text 100ms ease 4300ms forwards;
-}
-
-.row8 > p:nth-child(1) {
-  -webkit-animation: show-text 100ms ease 3900ms forwards;
-          animation: show-text 100ms ease 3900ms forwards;
-}
-
-.row8 > p:nth-child(2) {
-  -webkit-animation: show-text 100ms ease 4000ms forwards;
-          animation: show-text 100ms ease 4000ms forwards;
-}
-
-.row8 > p:nth-child(3) {
-  -webkit-animation: show-text 100ms ease 4100ms forwards;
-          animation: show-text 100ms ease 4100ms forwards;
-}
-
-.row8 > p:nth-child(4) {
-  -webkit-animation: show-text 100ms ease 4200ms forwards;
-          animation: show-text 100ms ease 4200ms forwards;
-}
-
-.row8 > p:nth-child(5) {
-  -webkit-animation: show-text 100ms ease 4300ms forwards;
-          animation: show-text 100ms ease 4300ms forwards;
-}
-
-.row8 > p:nth-child(6) {
-  -webkit-animation: show-text 100ms ease 4400ms forwards;
-          animation: show-text 100ms ease 4400ms forwards;
-}
-
-.row8 > p:nth-child(7) {
-  -webkit-animation: show-text 100ms ease 4500ms forwards;
-          animation: show-text 100ms ease 4500ms forwards;
-}
-
-.row8 > p:nth-child(8) {
-  -webkit-animation: show-text 100ms ease 4600ms forwards;
-          animation: show-text 100ms ease 4600ms forwards;
-}
-
-.row8 > p:nth-child(9) {
-  -webkit-animation: show-text 100ms ease 4700ms forwards;
-          animation: show-text 100ms ease 4700ms forwards;
-}
-
-.row9 > p:nth-child(1) {
-  -webkit-animation: show-text 100ms ease 4300ms forwards;
-          animation: show-text 100ms ease 4300ms forwards;
-}
-
-.row9 > p:nth-child(2) {
-  -webkit-animation: show-text 100ms ease 4400ms forwards;
-          animation: show-text 100ms ease 4400ms forwards;
-}
-
-.row9 > p:nth-child(3) {
-  -webkit-animation: show-text 100ms ease 4500ms forwards;
-          animation: show-text 100ms ease 4500ms forwards;
-}
-
-.row9 > p:nth-child(4) {
-  -webkit-animation: show-text 100ms ease 4600ms forwards;
-          animation: show-text 100ms ease 4600ms forwards;
-}
-
-.row9 > p:nth-child(5) {
-  -webkit-animation: show-text 100ms ease 4700ms forwards;
-          animation: show-text 100ms ease 4700ms forwards;
-}
-
-.row9 > p:nth-child(6) {
   -webkit-animation: show-text 100ms ease 4800ms forwards;
           animation: show-text 100ms ease 4800ms forwards;
 }
 
-.row9 > p:nth-child(7) {
+.row6 > p:nth-child(7) {
   -webkit-animation: show-text 100ms ease 4900ms forwards;
           animation: show-text 100ms ease 4900ms forwards;
 }
 
-.row9 > p:nth-child(8) {
+.row6 > p:nth-child(8) {
   -webkit-animation: show-text 100ms ease 5000ms forwards;
           animation: show-text 100ms ease 5000ms forwards;
 }
 
-.row9 > p:nth-child(9) {
+.row6 > p:nth-child(9) {
   -webkit-animation: show-text 100ms ease 5100ms forwards;
           animation: show-text 100ms ease 5100ms forwards;
+}
+
+.row7 > p:nth-child(1) {
+  -webkit-animation: show-text 100ms ease 5300ms forwards;
+          animation: show-text 100ms ease 5300ms forwards;
+}
+
+.row7 > p:nth-child(2) {
+  -webkit-animation: show-text 100ms ease 5400ms forwards;
+          animation: show-text 100ms ease 5400ms forwards;
+}
+
+.row7 > p:nth-child(3) {
+  -webkit-animation: show-text 100ms ease 5500ms forwards;
+          animation: show-text 100ms ease 5500ms forwards;
+}
+
+.row7 > p:nth-child(4) {
+  -webkit-animation: show-text 100ms ease 5600ms forwards;
+          animation: show-text 100ms ease 5600ms forwards;
+}
+
+.row7 > p:nth-child(5) {
+  -webkit-animation: show-text 100ms ease 5700ms forwards;
+          animation: show-text 100ms ease 5700ms forwards;
+}
+
+.row7 > p:nth-child(6) {
+  -webkit-animation: show-text 100ms ease 5800ms forwards;
+          animation: show-text 100ms ease 5800ms forwards;
+}
+
+.row7 > p:nth-child(7) {
+  -webkit-animation: show-text 100ms ease 5900ms forwards;
+          animation: show-text 100ms ease 5900ms forwards;
+}
+
+.row7 > p:nth-child(8) {
+  -webkit-animation: show-text 100ms ease 6000ms forwards;
+          animation: show-text 100ms ease 6000ms forwards;
+}
+
+.row7 > p:nth-child(9) {
+  -webkit-animation: show-text 100ms ease 6100ms forwards;
+          animation: show-text 100ms ease 6100ms forwards;
+}
+
+.row8 > p:nth-child(1) {
+  -webkit-animation: show-text 100ms ease 5700ms forwards;
+          animation: show-text 100ms ease 5700ms forwards;
+}
+
+.row8 > p:nth-child(2) {
+  -webkit-animation: show-text 100ms ease 5800ms forwards;
+          animation: show-text 100ms ease 5800ms forwards;
+}
+
+.row8 > p:nth-child(3) {
+  -webkit-animation: show-text 100ms ease 5900ms forwards;
+          animation: show-text 100ms ease 5900ms forwards;
+}
+
+.row8 > p:nth-child(4) {
+  -webkit-animation: show-text 100ms ease 6000ms forwards;
+          animation: show-text 100ms ease 6000ms forwards;
+}
+
+.row8 > p:nth-child(5) {
+  -webkit-animation: show-text 100ms ease 6100ms forwards;
+          animation: show-text 100ms ease 6100ms forwards;
+}
+
+.row8 > p:nth-child(6) {
+  -webkit-animation: show-text 100ms ease 6200ms forwards;
+          animation: show-text 100ms ease 6200ms forwards;
+}
+
+.row8 > p:nth-child(7) {
+  -webkit-animation: show-text 100ms ease 6300ms forwards;
+          animation: show-text 100ms ease 6300ms forwards;
+}
+
+.row8 > p:nth-child(8) {
+  -webkit-animation: show-text 100ms ease 6400ms forwards;
+          animation: show-text 100ms ease 6400ms forwards;
+}
+
+.row8 > p:nth-child(9) {
+  -webkit-animation: show-text 100ms ease 6500ms forwards;
+          animation: show-text 100ms ease 6500ms forwards;
+}
+
+.row9 > p:nth-child(1) {
+  -webkit-animation: show-text 100ms ease 6700ms forwards;
+          animation: show-text 100ms ease 6700ms forwards;
+}
+
+.row9 > p:nth-child(2) {
+  -webkit-animation: show-text 100ms ease 6800ms forwards;
+          animation: show-text 100ms ease 6800ms forwards;
+}
+
+.row9 > p:nth-child(3) {
+  -webkit-animation: show-text 100ms ease 6900ms forwards;
+          animation: show-text 100ms ease 6900ms forwards;
+}
+
+.row9 > p:nth-child(4) {
+  -webkit-animation: show-text 100ms ease 7000ms forwards;
+          animation: show-text 100ms ease 7000ms forwards;
+}
+
+.row9 > p:nth-child(5) {
+  -webkit-animation: show-text 100ms ease 7100ms forwards;
+          animation: show-text 100ms ease 7100ms forwards;
+}
+
+.row9 > p:nth-child(6) {
+  -webkit-animation: show-text 100ms ease 7200ms forwards;
+          animation: show-text 100ms ease 7200ms forwards;
+}
+
+.row9 > p:nth-child(7) {
+  -webkit-animation: show-text 100ms ease 7300ms forwards;
+          animation: show-text 100ms ease 7300ms forwards;
+}
+
+.row9 > p:nth-child(8) {
+  -webkit-animation: show-text 100ms ease 7400ms forwards;
+          animation: show-text 100ms ease 7400ms forwards;
+}
+
+.row9 > p:nth-child(9) {
+  -webkit-animation: show-text 100ms ease 7500ms forwards;
+          animation: show-text 100ms ease 7500ms forwards;
+}
+
+.row10 > p:nth-child(1) {
+  -webkit-animation: show-text 100ms ease 7100ms forwards;
+          animation: show-text 100ms ease 7100ms forwards;
+}
+
+.row10 > p:nth-child(2) {
+  -webkit-animation: show-text 100ms ease 7200ms forwards;
+          animation: show-text 100ms ease 7200ms forwards;
+}
+
+.row10 > p:nth-child(3) {
+  -webkit-animation: show-text 100ms ease 7300ms forwards;
+          animation: show-text 100ms ease 7300ms forwards;
+}
+
+.row10 > p:nth-child(4) {
+  -webkit-animation: show-text 100ms ease 7400ms forwards;
+          animation: show-text 100ms ease 7400ms forwards;
+}
+
+.row10 > p:nth-child(5) {
+  -webkit-animation: show-text 100ms ease 7500ms forwards;
+          animation: show-text 100ms ease 7500ms forwards;
+}
+
+.row10 > p:nth-child(6) {
+  -webkit-animation: show-text 100ms ease 7600ms forwards;
+          animation: show-text 100ms ease 7600ms forwards;
+}
+
+.row10 > p:nth-child(7) {
+  -webkit-animation: show-text 100ms ease 7700ms forwards;
+          animation: show-text 100ms ease 7700ms forwards;
+}
+
+.row10 > p:nth-child(8) {
+  -webkit-animation: show-text 100ms ease 7800ms forwards;
+          animation: show-text 100ms ease 7800ms forwards;
+}
+
+.row10 > p:nth-child(9) {
+  -webkit-animation: show-text 100ms ease 7900ms forwards;
+          animation: show-text 100ms ease 7900ms forwards;
+}
+
+.row11 > p:nth-child(1) {
+  -webkit-animation: show-text 100ms ease 8100ms forwards;
+          animation: show-text 100ms ease 8100ms forwards;
+}
+
+.row11 > p:nth-child(2) {
+  -webkit-animation: show-text 100ms ease 8200ms forwards;
+          animation: show-text 100ms ease 8200ms forwards;
+}
+
+.row11 > p:nth-child(3) {
+  -webkit-animation: show-text 100ms ease 8300ms forwards;
+          animation: show-text 100ms ease 8300ms forwards;
+}
+
+.row11 > p:nth-child(4) {
+  -webkit-animation: show-text 100ms ease 8400ms forwards;
+          animation: show-text 100ms ease 8400ms forwards;
+}
+
+.row11 > p:nth-child(5) {
+  -webkit-animation: show-text 100ms ease 8500ms forwards;
+          animation: show-text 100ms ease 8500ms forwards;
+}
+
+.row11 > p:nth-child(6) {
+  -webkit-animation: show-text 100ms ease 8600ms forwards;
+          animation: show-text 100ms ease 8600ms forwards;
+}
+
+.row11 > p:nth-child(7) {
+  -webkit-animation: show-text 100ms ease 8700ms forwards;
+          animation: show-text 100ms ease 8700ms forwards;
+}
+
+.row11 > p:nth-child(8) {
+  -webkit-animation: show-text 100ms ease 8800ms forwards;
+          animation: show-text 100ms ease 8800ms forwards;
+}
+
+.row11 > p:nth-child(9) {
+  -webkit-animation: show-text 100ms ease 8900ms forwards;
+          animation: show-text 100ms ease 8900ms forwards;
+}
+
+.row12 > p:nth-child(1) {
+  -webkit-animation: show-text 100ms ease 8500ms forwards;
+          animation: show-text 100ms ease 8500ms forwards;
+}
+
+.row12 > p:nth-child(2) {
+  -webkit-animation: show-text 100ms ease 8600ms forwards;
+          animation: show-text 100ms ease 8600ms forwards;
+}
+
+.row12 > p:nth-child(3) {
+  -webkit-animation: show-text 100ms ease 8700ms forwards;
+          animation: show-text 100ms ease 8700ms forwards;
+}
+
+.row12 > p:nth-child(4) {
+  -webkit-animation: show-text 100ms ease 8800ms forwards;
+          animation: show-text 100ms ease 8800ms forwards;
+}
+
+.row12 > p:nth-child(5) {
+  -webkit-animation: show-text 100ms ease 8900ms forwards;
+          animation: show-text 100ms ease 8900ms forwards;
+}
+
+.row12 > p:nth-child(6) {
+  -webkit-animation: show-text 100ms ease 9000ms forwards;
+          animation: show-text 100ms ease 9000ms forwards;
+}
+
+.row12 > p:nth-child(7) {
+  -webkit-animation: show-text 100ms ease 9100ms forwards;
+          animation: show-text 100ms ease 9100ms forwards;
+}
+
+.row12 > p:nth-child(8) {
+  -webkit-animation: show-text 100ms ease 9200ms forwards;
+          animation: show-text 100ms ease 9200ms forwards;
+}
+
+.row12 > p:nth-child(9) {
+  -webkit-animation: show-text 100ms ease 9300ms forwards;
+          animation: show-text 100ms ease 9300ms forwards;
+}
+
+.row13 > p:nth-child(1) {
+  -webkit-animation: show-text 100ms ease 9500ms forwards;
+          animation: show-text 100ms ease 9500ms forwards;
+}
+
+.row13 > p:nth-child(2) {
+  -webkit-animation: show-text 100ms ease 9600ms forwards;
+          animation: show-text 100ms ease 9600ms forwards;
+}
+
+.row13 > p:nth-child(3) {
+  -webkit-animation: show-text 100ms ease 9700ms forwards;
+          animation: show-text 100ms ease 9700ms forwards;
+}
+
+.row13 > p:nth-child(4) {
+  -webkit-animation: show-text 100ms ease 9800ms forwards;
+          animation: show-text 100ms ease 9800ms forwards;
+}
+
+.row13 > p:nth-child(5) {
+  -webkit-animation: show-text 100ms ease 9900ms forwards;
+          animation: show-text 100ms ease 9900ms forwards;
+}
+
+.row13 > p:nth-child(6) {
+  -webkit-animation: show-text 100ms ease 10000ms forwards;
+          animation: show-text 100ms ease 10000ms forwards;
+}
+
+.row13 > p:nth-child(7) {
+  -webkit-animation: show-text 100ms ease 10100ms forwards;
+          animation: show-text 100ms ease 10100ms forwards;
+}
+
+.row13 > p:nth-child(8) {
+  -webkit-animation: show-text 100ms ease 10200ms forwards;
+          animation: show-text 100ms ease 10200ms forwards;
+}
+
+.row13 > p:nth-child(9) {
+  -webkit-animation: show-text 100ms ease 10300ms forwards;
+          animation: show-text 100ms ease 10300ms forwards;
+}
+
+.row14 > p:nth-child(1) {
+  -webkit-animation: show-text 100ms ease 9900ms forwards;
+          animation: show-text 100ms ease 9900ms forwards;
+}
+
+.row14 > p:nth-child(2) {
+  -webkit-animation: show-text 100ms ease 10000ms forwards;
+          animation: show-text 100ms ease 10000ms forwards;
+}
+
+.row14 > p:nth-child(3) {
+  -webkit-animation: show-text 100ms ease 10100ms forwards;
+          animation: show-text 100ms ease 10100ms forwards;
+}
+
+.row14 > p:nth-child(4) {
+  -webkit-animation: show-text 100ms ease 10200ms forwards;
+          animation: show-text 100ms ease 10200ms forwards;
+}
+
+.row14 > p:nth-child(5) {
+  -webkit-animation: show-text 100ms ease 10300ms forwards;
+          animation: show-text 100ms ease 10300ms forwards;
+}
+
+.row14 > p:nth-child(6) {
+  -webkit-animation: show-text 100ms ease 10400ms forwards;
+          animation: show-text 100ms ease 10400ms forwards;
+}
+
+.row14 > p:nth-child(7) {
+  -webkit-animation: show-text 100ms ease 10500ms forwards;
+          animation: show-text 100ms ease 10500ms forwards;
+}
+
+.row14 > p:nth-child(8) {
+  -webkit-animation: show-text 100ms ease 10600ms forwards;
+          animation: show-text 100ms ease 10600ms forwards;
+}
+
+.row14 > p:nth-child(9) {
+  -webkit-animation: show-text 100ms ease 10700ms forwards;
+          animation: show-text 100ms ease 10700ms forwards;
+}
+
+.row15 > p:nth-child(1) {
+  -webkit-animation: show-text 100ms ease 10900ms forwards;
+          animation: show-text 100ms ease 10900ms forwards;
+}
+
+.row15 > p:nth-child(2) {
+  -webkit-animation: show-text 100ms ease 11000ms forwards;
+          animation: show-text 100ms ease 11000ms forwards;
+}
+
+.row15 > p:nth-child(3) {
+  -webkit-animation: show-text 100ms ease 11100ms forwards;
+          animation: show-text 100ms ease 11100ms forwards;
+}
+
+.row15 > p:nth-child(4) {
+  -webkit-animation: show-text 100ms ease 11200ms forwards;
+          animation: show-text 100ms ease 11200ms forwards;
+}
+
+.row15 > p:nth-child(5) {
+  -webkit-animation: show-text 100ms ease 11300ms forwards;
+          animation: show-text 100ms ease 11300ms forwards;
+}
+
+.row15 > p:nth-child(6) {
+  -webkit-animation: show-text 100ms ease 11400ms forwards;
+          animation: show-text 100ms ease 11400ms forwards;
+}
+
+.row15 > p:nth-child(7) {
+  -webkit-animation: show-text 100ms ease 11500ms forwards;
+          animation: show-text 100ms ease 11500ms forwards;
+}
+
+.row15 > p:nth-child(8) {
+  -webkit-animation: show-text 100ms ease 11600ms forwards;
+          animation: show-text 100ms ease 11600ms forwards;
+}
+
+.row15 > p:nth-child(9) {
+  -webkit-animation: show-text 100ms ease 11700ms forwards;
+          animation: show-text 100ms ease 11700ms forwards;
+}
+
+.row16 > p:nth-child(1) {
+  -webkit-animation: show-text 100ms ease 11300ms forwards;
+          animation: show-text 100ms ease 11300ms forwards;
+}
+
+.row16 > p:nth-child(2) {
+  -webkit-animation: show-text 100ms ease 11400ms forwards;
+          animation: show-text 100ms ease 11400ms forwards;
+}
+
+.row16 > p:nth-child(3) {
+  -webkit-animation: show-text 100ms ease 11500ms forwards;
+          animation: show-text 100ms ease 11500ms forwards;
+}
+
+.row16 > p:nth-child(4) {
+  -webkit-animation: show-text 100ms ease 11600ms forwards;
+          animation: show-text 100ms ease 11600ms forwards;
+}
+
+.row16 > p:nth-child(5) {
+  -webkit-animation: show-text 100ms ease 11700ms forwards;
+          animation: show-text 100ms ease 11700ms forwards;
+}
+
+.row16 > p:nth-child(6) {
+  -webkit-animation: show-text 100ms ease 11800ms forwards;
+          animation: show-text 100ms ease 11800ms forwards;
+}
+
+.row16 > p:nth-child(7) {
+  -webkit-animation: show-text 100ms ease 11900ms forwards;
+          animation: show-text 100ms ease 11900ms forwards;
+}
+
+.row16 > p:nth-child(8) {
+  -webkit-animation: show-text 100ms ease 12000ms forwards;
+          animation: show-text 100ms ease 12000ms forwards;
+}
+
+.row16 > p:nth-child(9) {
+  -webkit-animation: show-text 100ms ease 12100ms forwards;
+          animation: show-text 100ms ease 12100ms forwards;
+}
+
+.row17 > p:nth-child(1) {
+  -webkit-animation: show-text 100ms ease 11700ms forwards;
+          animation: show-text 100ms ease 11700ms forwards;
+}
+
+.row17 > p:nth-child(2) {
+  -webkit-animation: show-text 100ms ease 11800ms forwards;
+          animation: show-text 100ms ease 11800ms forwards;
+}
+
+.row17 > p:nth-child(3) {
+  -webkit-animation: show-text 100ms ease 11900ms forwards;
+          animation: show-text 100ms ease 11900ms forwards;
+}
+
+.row17 > p:nth-child(4) {
+  -webkit-animation: show-text 100ms ease 12000ms forwards;
+          animation: show-text 100ms ease 12000ms forwards;
+}
+
+.row17 > p:nth-child(5) {
+  -webkit-animation: show-text 100ms ease 12100ms forwards;
+          animation: show-text 100ms ease 12100ms forwards;
+}
+
+.row17 > p:nth-child(6) {
+  -webkit-animation: show-text 100ms ease 12200ms forwards;
+          animation: show-text 100ms ease 12200ms forwards;
+}
+
+.row17 > p:nth-child(7) {
+  -webkit-animation: show-text 100ms ease 12300ms forwards;
+          animation: show-text 100ms ease 12300ms forwards;
+}
+
+.row17 > p:nth-child(8) {
+  -webkit-animation: show-text 100ms ease 12400ms forwards;
+          animation: show-text 100ms ease 12400ms forwards;
+}
+
+.row17 > p:nth-child(9) {
+  -webkit-animation: show-text 100ms ease 12500ms forwards;
+          animation: show-text 100ms ease 12500ms forwards;
+}
+
+.row18 > p:nth-child(1) {
+  -webkit-animation: show-text 100ms ease 12100ms forwards;
+          animation: show-text 100ms ease 12100ms forwards;
+}
+
+.row18 > p:nth-child(2) {
+  -webkit-animation: show-text 100ms ease 12200ms forwards;
+          animation: show-text 100ms ease 12200ms forwards;
+}
+
+.row18 > p:nth-child(3) {
+  -webkit-animation: show-text 100ms ease 12300ms forwards;
+          animation: show-text 100ms ease 12300ms forwards;
+}
+
+.row18 > p:nth-child(4) {
+  -webkit-animation: show-text 100ms ease 12400ms forwards;
+          animation: show-text 100ms ease 12400ms forwards;
+}
+
+.row18 > p:nth-child(5) {
+  -webkit-animation: show-text 100ms ease 12500ms forwards;
+          animation: show-text 100ms ease 12500ms forwards;
+}
+
+.row18 > p:nth-child(6) {
+  -webkit-animation: show-text 100ms ease 12600ms forwards;
+          animation: show-text 100ms ease 12600ms forwards;
+}
+
+.row18 > p:nth-child(7) {
+  -webkit-animation: show-text 100ms ease 12700ms forwards;
+          animation: show-text 100ms ease 12700ms forwards;
+}
+
+.row18 > p:nth-child(8) {
+  -webkit-animation: show-text 100ms ease 12800ms forwards;
+          animation: show-text 100ms ease 12800ms forwards;
+}
+
+.row18 > p:nth-child(9) {
+  -webkit-animation: show-text 100ms ease 12900ms forwards;
+          animation: show-text 100ms ease 12900ms forwards;
 }
 
 @-webkit-keyframes blink {
@@ -1087,95 +1495,95 @@ html.is-animating .transition-fade {
 
 @-webkit-keyframes glitch-skew {
   0% {
-    -webkit-transform: skew(4deg);
-            transform: skew(4deg);
-  }
-  10% {
     -webkit-transform: skew(2deg);
             transform: skew(2deg);
   }
-  20% {
+  10% {
     -webkit-transform: skew(0deg);
             transform: skew(0deg);
+  }
+  20% {
+    -webkit-transform: skew(4deg);
+            transform: skew(4deg);
   }
   30% {
     -webkit-transform: skew(4deg);
             transform: skew(4deg);
   }
   40% {
-    -webkit-transform: skew(0deg);
-            transform: skew(0deg);
+    -webkit-transform: skew(-3deg);
+            transform: skew(-3deg);
   }
   50% {
     -webkit-transform: skew(-1deg);
             transform: skew(-1deg);
   }
   60% {
-    -webkit-transform: skew(1deg);
-            transform: skew(1deg);
+    -webkit-transform: skew(-3deg);
+            transform: skew(-3deg);
   }
   70% {
     -webkit-transform: skew(-1deg);
             transform: skew(-1deg);
   }
   80% {
-    -webkit-transform: skew(-3deg);
-            transform: skew(-3deg);
+    -webkit-transform: skew(4deg);
+            transform: skew(4deg);
   }
   90% {
     -webkit-transform: skew(2deg);
             transform: skew(2deg);
   }
   100% {
-    -webkit-transform: skew(1deg);
-            transform: skew(1deg);
+    -webkit-transform: skew(-3deg);
+            transform: skew(-3deg);
   }
 }
 
 @keyframes glitch-skew {
   0% {
-    -webkit-transform: skew(4deg);
-            transform: skew(4deg);
-  }
-  10% {
     -webkit-transform: skew(2deg);
             transform: skew(2deg);
   }
-  20% {
+  10% {
     -webkit-transform: skew(0deg);
             transform: skew(0deg);
+  }
+  20% {
+    -webkit-transform: skew(4deg);
+            transform: skew(4deg);
   }
   30% {
     -webkit-transform: skew(4deg);
             transform: skew(4deg);
   }
   40% {
-    -webkit-transform: skew(0deg);
-            transform: skew(0deg);
+    -webkit-transform: skew(-3deg);
+            transform: skew(-3deg);
   }
   50% {
     -webkit-transform: skew(-1deg);
             transform: skew(-1deg);
   }
   60% {
-    -webkit-transform: skew(1deg);
-            transform: skew(1deg);
+    -webkit-transform: skew(-3deg);
+            transform: skew(-3deg);
   }
   70% {
     -webkit-transform: skew(-1deg);
             transform: skew(-1deg);
   }
   80% {
-    -webkit-transform: skew(-3deg);
-            transform: skew(-3deg);
+    -webkit-transform: skew(4deg);
+            transform: skew(4deg);
   }
   90% {
     -webkit-transform: skew(2deg);
             transform: skew(2deg);
   }
   100% {
-    -webkit-transform: skew(1deg);
-            transform: skew(1deg);
+    -webkit-transform: skew(-3deg);
+            transform: skew(-3deg);
   }
 }
 
@@ -1193,217 +1601,217 @@ html.is-animating .transition-fade {
 
 @-webkit-keyframes glitch-anim {
   0% {
-    clip: rect(55px, 9999px, 98px, 0);
-    -webkit-transform: skew(0.11deg);
-            transform: skew(0.11deg);
+    clip: rect(25px, 9999px, 38px, 0);
+    -webkit-transform: skew(0.19deg);
+            transform: skew(0.19deg);
   }
   5% {
-    clip: rect(3px, 9999px, 10px, 0);
-    -webkit-transform: skew(0.14deg);
-            transform: skew(0.14deg);
+    clip: rect(37px, 9999px, 68px, 0);
+    -webkit-transform: skew(0.17deg);
+            transform: skew(0.17deg);
   }
   10% {
-    clip: rect(28px, 9999px, 71px, 0);
-    -webkit-transform: skew(0.55deg);
-            transform: skew(0.55deg);
+    clip: rect(52px, 9999px, 55px, 0);
+    -webkit-transform: skew(0.24deg);
+            transform: skew(0.24deg);
   }
   15% {
-    clip: rect(4px, 9999px, 84px, 0);
-    -webkit-transform: skew(0.85deg);
-            transform: skew(0.85deg);
+    clip: rect(11px, 9999px, 88px, 0);
+    -webkit-transform: skew(0.92deg);
+            transform: skew(0.92deg);
   }
   20% {
-    clip: rect(68px, 9999px, 23px, 0);
-    -webkit-transform: skew(0.26deg);
-            transform: skew(0.26deg);
-  }
-  25% {
-    clip: rect(62px, 9999px, 24px, 0);
-    -webkit-transform: skew(0.89deg);
-            transform: skew(0.89deg);
-  }
-  30% {
-    clip: rect(48px, 9999px, 26px, 0);
-    -webkit-transform: skew(0.59deg);
-            transform: skew(0.59deg);
-  }
-  35% {
-    clip: rect(33px, 9999px, 7px, 0);
-    -webkit-transform: skew(0.04deg);
-            transform: skew(0.04deg);
-  }
-  40% {
-    clip: rect(39px, 9999px, 77px, 0);
-    -webkit-transform: skew(0.75deg);
-            transform: skew(0.75deg);
-  }
-  45% {
-    clip: rect(72px, 9999px, 97px, 0);
-    -webkit-transform: skew(0.97deg);
-            transform: skew(0.97deg);
-  }
-  50% {
-    clip: rect(12px, 9999px, 47px, 0);
-    -webkit-transform: skew(0.28deg);
-            transform: skew(0.28deg);
-  }
-  55% {
-    clip: rect(32px, 9999px, 92px, 0);
-    -webkit-transform: skew(0.16deg);
-            transform: skew(0.16deg);
-  }
-  60% {
-    clip: rect(72px, 9999px, 23px, 0);
-    -webkit-transform: skew(0.01deg);
-            transform: skew(0.01deg);
-  }
-  65% {
-    clip: rect(47px, 9999px, 36px, 0);
-    -webkit-transform: skew(0.55deg);
-            transform: skew(0.55deg);
-  }
-  70% {
-    clip: rect(81px, 9999px, 73px, 0);
-    -webkit-transform: skew(0.87deg);
-            transform: skew(0.87deg);
-  }
-  75% {
-    clip: rect(21px, 9999px, 91px, 0);
-    -webkit-transform: skew(0.08deg);
-            transform: skew(0.08deg);
-  }
-  80% {
-    clip: rect(61px, 9999px, 85px, 0);
-    -webkit-transform: skew(0.9deg);
-            transform: skew(0.9deg);
-  }
-  85% {
-    clip: rect(53px, 9999px, 19px, 0);
-    -webkit-transform: skew(0.12deg);
-            transform: skew(0.12deg);
-  }
-  90% {
-    clip: rect(98px, 9999px, 14px, 0);
+    clip: rect(84px, 9999px, 17px, 0);
     -webkit-transform: skew(0.36deg);
             transform: skew(0.36deg);
   }
+  25% {
+    clip: rect(94px, 9999px, 43px, 0);
+    -webkit-transform: skew(0.77deg);
+            transform: skew(0.77deg);
+  }
+  30% {
+    clip: rect(14px, 9999px, 87px, 0);
+    -webkit-transform: skew(0.06deg);
+            transform: skew(0.06deg);
+  }
+  35% {
+    clip: rect(75px, 9999px, 52px, 0);
+    -webkit-transform: skew(0.25deg);
+            transform: skew(0.25deg);
+  }
+  40% {
+    clip: rect(6px, 9999px, 100px, 0);
+    -webkit-transform: skew(0.17deg);
+            transform: skew(0.17deg);
+  }
+  45% {
+    clip: rect(64px, 9999px, 44px, 0);
+    -webkit-transform: skew(0.83deg);
+            transform: skew(0.83deg);
+  }
+  50% {
+    clip: rect(2px, 9999px, 27px, 0);
+    -webkit-transform: skew(0.47deg);
+            transform: skew(0.47deg);
+  }
+  55% {
+    clip: rect(62px, 9999px, 18px, 0);
+    -webkit-transform: skew(0.95deg);
+            transform: skew(0.95deg);
+  }
+  60% {
+    clip: rect(77px, 9999px, 9px, 0);
+    -webkit-transform: skew(0.48deg);
+            transform: skew(0.48deg);
+  }
+  65% {
+    clip: rect(60px, 9999px, 97px, 0);
+    -webkit-transform: skew(0.48deg);
+            transform: skew(0.48deg);
+  }
+  70% {
+    clip: rect(44px, 9999px, 57px, 0);
+    -webkit-transform: skew(0.77deg);
+            transform: skew(0.77deg);
+  }
+  75% {
+    clip: rect(68px, 9999px, 57px, 0);
+    -webkit-transform: skew(0.17deg);
+            transform: skew(0.17deg);
+  }
+  80% {
+    clip: rect(88px, 9999px, 99px, 0);
+    -webkit-transform: skew(0.01deg);
+            transform: skew(0.01deg);
+  }
+  85% {
+    clip: rect(36px, 9999px, 70px, 0);
+    -webkit-transform: skew(0.37deg);
+            transform: skew(0.37deg);
+  }
+  90% {
+    clip: rect(93px, 9999px, 30px, 0);
+    -webkit-transform: skew(0.32deg);
+            transform: skew(0.32deg);
+  }
   95% {
-    clip: rect(18px, 9999px, 30px, 0);
+    clip: rect(38px, 9999px, 69px, 0);
     -webkit-transform: skew(0.4deg);
             transform: skew(0.4deg);
   }
   100% {
-    clip: rect(22px, 9999px, 68px, 0);
-    -webkit-transform: skew(0.09deg);
-            transform: skew(0.09deg);
+    clip: rect(58px, 9999px, 48px, 0);
+    -webkit-transform: skew(0.02deg);
+            transform: skew(0.02deg);
   }
 }
 
 @keyframes glitch-anim {
   0% {
-    clip: rect(55px, 9999px, 98px, 0);
-    -webkit-transform: skew(0.11deg);
-            transform: skew(0.11deg);
+    clip: rect(25px, 9999px, 38px, 0);
+    -webkit-transform: skew(0.19deg);
+            transform: skew(0.19deg);
   }
   5% {
-    clip: rect(3px, 9999px, 10px, 0);
-    -webkit-transform: skew(0.14deg);
-            transform: skew(0.14deg);
+    clip: rect(37px, 9999px, 68px, 0);
+    -webkit-transform: skew(0.17deg);
+            transform: skew(0.17deg);
   }
   10% {
-    clip: rect(28px, 9999px, 71px, 0);
-    -webkit-transform: skew(0.55deg);
-            transform: skew(0.55deg);
+    clip: rect(52px, 9999px, 55px, 0);
+    -webkit-transform: skew(0.24deg);
+            transform: skew(0.24deg);
   }
   15% {
-    clip: rect(4px, 9999px, 84px, 0);
-    -webkit-transform: skew(0.85deg);
-            transform: skew(0.85deg);
+    clip: rect(11px, 9999px, 88px, 0);
+    -webkit-transform: skew(0.92deg);
+            transform: skew(0.92deg);
   }
   20% {
-    clip: rect(68px, 9999px, 23px, 0);
-    -webkit-transform: skew(0.26deg);
-            transform: skew(0.26deg);
-  }
-  25% {
-    clip: rect(62px, 9999px, 24px, 0);
-    -webkit-transform: skew(0.89deg);
-            transform: skew(0.89deg);
-  }
-  30% {
-    clip: rect(48px, 9999px, 26px, 0);
-    -webkit-transform: skew(0.59deg);
-            transform: skew(0.59deg);
-  }
-  35% {
-    clip: rect(33px, 9999px, 7px, 0);
-    -webkit-transform: skew(0.04deg);
-            transform: skew(0.04deg);
-  }
-  40% {
-    clip: rect(39px, 9999px, 77px, 0);
-    -webkit-transform: skew(0.75deg);
-            transform: skew(0.75deg);
-  }
-  45% {
-    clip: rect(72px, 9999px, 97px, 0);
-    -webkit-transform: skew(0.97deg);
-            transform: skew(0.97deg);
-  }
-  50% {
-    clip: rect(12px, 9999px, 47px, 0);
-    -webkit-transform: skew(0.28deg);
-            transform: skew(0.28deg);
-  }
-  55% {
-    clip: rect(32px, 9999px, 92px, 0);
-    -webkit-transform: skew(0.16deg);
-            transform: skew(0.16deg);
-  }
-  60% {
-    clip: rect(72px, 9999px, 23px, 0);
-    -webkit-transform: skew(0.01deg);
-            transform: skew(0.01deg);
-  }
-  65% {
-    clip: rect(47px, 9999px, 36px, 0);
-    -webkit-transform: skew(0.55deg);
-            transform: skew(0.55deg);
-  }
-  70% {
-    clip: rect(81px, 9999px, 73px, 0);
-    -webkit-transform: skew(0.87deg);
-            transform: skew(0.87deg);
-  }
-  75% {
-    clip: rect(21px, 9999px, 91px, 0);
-    -webkit-transform: skew(0.08deg);
-            transform: skew(0.08deg);
-  }
-  80% {
-    clip: rect(61px, 9999px, 85px, 0);
-    -webkit-transform: skew(0.9deg);
-            transform: skew(0.9deg);
-  }
-  85% {
-    clip: rect(53px, 9999px, 19px, 0);
-    -webkit-transform: skew(0.12deg);
-            transform: skew(0.12deg);
-  }
-  90% {
-    clip: rect(98px, 9999px, 14px, 0);
+    clip: rect(84px, 9999px, 17px, 0);
     -webkit-transform: skew(0.36deg);
             transform: skew(0.36deg);
   }
+  25% {
+    clip: rect(94px, 9999px, 43px, 0);
+    -webkit-transform: skew(0.77deg);
+            transform: skew(0.77deg);
+  }
+  30% {
+    clip: rect(14px, 9999px, 87px, 0);
+    -webkit-transform: skew(0.06deg);
+            transform: skew(0.06deg);
+  }
+  35% {
+    clip: rect(75px, 9999px, 52px, 0);
+    -webkit-transform: skew(0.25deg);
+            transform: skew(0.25deg);
+  }
+  40% {
+    clip: rect(6px, 9999px, 100px, 0);
+    -webkit-transform: skew(0.17deg);
+            transform: skew(0.17deg);
+  }
+  45% {
+    clip: rect(64px, 9999px, 44px, 0);
+    -webkit-transform: skew(0.83deg);
+            transform: skew(0.83deg);
+  }
+  50% {
+    clip: rect(2px, 9999px, 27px, 0);
+    -webkit-transform: skew(0.47deg);
+            transform: skew(0.47deg);
+  }
+  55% {
+    clip: rect(62px, 9999px, 18px, 0);
+    -webkit-transform: skew(0.95deg);
+            transform: skew(0.95deg);
+  }
+  60% {
+    clip: rect(77px, 9999px, 9px, 0);
+    -webkit-transform: skew(0.48deg);
+            transform: skew(0.48deg);
+  }
+  65% {
+    clip: rect(60px, 9999px, 97px, 0);
+    -webkit-transform: skew(0.48deg);
+            transform: skew(0.48deg);
+  }
+  70% {
+    clip: rect(44px, 9999px, 57px, 0);
+    -webkit-transform: skew(0.77deg);
+            transform: skew(0.77deg);
+  }
+  75% {
+    clip: rect(68px, 9999px, 57px, 0);
+    -webkit-transform: skew(0.17deg);
+            transform: skew(0.17deg);
+  }
+  80% {
+    clip: rect(88px, 9999px, 99px, 0);
+    -webkit-transform: skew(0.01deg);
+            transform: skew(0.01deg);
+  }
+  85% {
+    clip: rect(36px, 9999px, 70px, 0);
+    -webkit-transform: skew(0.37deg);
+            transform: skew(0.37deg);
+  }
+  90% {
+    clip: rect(93px, 9999px, 30px, 0);
+    -webkit-transform: skew(0.32deg);
+            transform: skew(0.32deg);
+  }
   95% {
-    clip: rect(18px, 9999px, 30px, 0);
+    clip: rect(38px, 9999px, 69px, 0);
     -webkit-transform: skew(0.4deg);
             transform: skew(0.4deg);
   }
   100% {
-    clip: rect(22px, 9999px, 68px, 0);
-    -webkit-transform: skew(0.09deg);
-            transform: skew(0.09deg);
+    clip: rect(58px, 9999px, 48px, 0);
+    -webkit-transform: skew(0.02deg);
+            transform: skew(0.02deg);
   }
 }
 
@@ -1422,217 +1830,217 @@ html.is-animating .transition-fade {
 
 @-webkit-keyframes glitch-anim2 {
   0% {
-    clip: rect(82px, 9999px, 52px, 0);
-    -webkit-transform: skew(0.17deg);
-            transform: skew(0.17deg);
-  }
-  5% {
-    clip: rect(54px, 9999px, 65px, 0);
-    -webkit-transform: skew(0.28deg);
-            transform: skew(0.28deg);
-  }
-  10% {
-    clip: rect(59px, 9999px, 100px, 0);
-    -webkit-transform: skew(0.51deg);
-            transform: skew(0.51deg);
-  }
-  15% {
-    clip: rect(17px, 9999px, 82px, 0);
-    -webkit-transform: skew(0.99deg);
-            transform: skew(0.99deg);
-  }
-  20% {
-    clip: rect(78px, 9999px, 64px, 0);
-    -webkit-transform: skew(0.6deg);
-            transform: skew(0.6deg);
-  }
-  25% {
-    clip: rect(24px, 9999px, 52px, 0);
+    clip: rect(61px, 9999px, 14px, 0);
     -webkit-transform: skew(0.61deg);
             transform: skew(0.61deg);
   }
+  5% {
+    clip: rect(69px, 9999px, 57px, 0);
+    -webkit-transform: skew(0.64deg);
+            transform: skew(0.64deg);
+  }
+  10% {
+    clip: rect(44px, 9999px, 100px, 0);
+    -webkit-transform: skew(0.67deg);
+            transform: skew(0.67deg);
+  }
+  15% {
+    clip: rect(33px, 9999px, 88px, 0);
+    -webkit-transform: skew(0.66deg);
+            transform: skew(0.66deg);
+  }
+  20% {
+    clip: rect(68px, 9999px, 57px, 0);
+    -webkit-transform: skew(0.95deg);
+            transform: skew(0.95deg);
+  }
+  25% {
+    clip: rect(59px, 9999px, 58px, 0);
+    -webkit-transform: skew(0.42deg);
+            transform: skew(0.42deg);
+  }
   30% {
-    clip: rect(26px, 9999px, 2px, 0);
+    clip: rect(5px, 9999px, 29px, 0);
     -webkit-transform: skew(0.08deg);
             transform: skew(0.08deg);
   }
   35% {
-    clip: rect(65px, 9999px, 57px, 0);
-    -webkit-transform: skew(0.54deg);
-            transform: skew(0.54deg);
+    clip: rect(75px, 9999px, 58px, 0);
+    -webkit-transform: skew(0.58deg);
+            transform: skew(0.58deg);
   }
   40% {
-    clip: rect(82px, 9999px, 45px, 0);
-    -webkit-transform: skew(0.6deg);
-            transform: skew(0.6deg);
+    clip: rect(93px, 9999px, 75px, 0);
+    -webkit-transform: skew(0.37deg);
+            transform: skew(0.37deg);
   }
   45% {
-    clip: rect(17px, 9999px, 46px, 0);
-    -webkit-transform: skew(0.6deg);
-            transform: skew(0.6deg);
+    clip: rect(79px, 9999px, 60px, 0);
+    -webkit-transform: skew(0.68deg);
+            transform: skew(0.68deg);
   }
   50% {
-    clip: rect(63px, 9999px, 80px, 0);
-    -webkit-transform: skew(0.09deg);
-            transform: skew(0.09deg);
+    clip: rect(16px, 9999px, 27px, 0);
+    -webkit-transform: skew(0.16deg);
+            transform: skew(0.16deg);
   }
   55% {
-    clip: rect(49px, 9999px, 30px, 0);
-    -webkit-transform: skew(0.98deg);
-            transform: skew(0.98deg);
+    clip: rect(2px, 9999px, 17px, 0);
+    -webkit-transform: skew(0.57deg);
+            transform: skew(0.57deg);
   }
   60% {
-    clip: rect(34px, 9999px, 48px, 0);
-    -webkit-transform: skew(0.53deg);
-            transform: skew(0.53deg);
+    clip: rect(5px, 9999px, 53px, 0);
+    -webkit-transform: skew(0.51deg);
+            transform: skew(0.51deg);
   }
   65% {
-    clip: rect(90px, 9999px, 57px, 0);
-    -webkit-transform: skew(0.77deg);
-            transform: skew(0.77deg);
+    clip: rect(69px, 9999px, 40px, 0);
+    -webkit-transform: skew(0.35deg);
+            transform: skew(0.35deg);
   }
   70% {
-    clip: rect(63px, 9999px, 26px, 0);
-    -webkit-transform: skew(0.81deg);
-            transform: skew(0.81deg);
+    clip: rect(42px, 9999px, 51px, 0);
+    -webkit-transform: skew(0.4deg);
+            transform: skew(0.4deg);
   }
   75% {
-    clip: rect(16px, 9999px, 94px, 0);
-    -webkit-transform: skew(0.79deg);
-            transform: skew(0.79deg);
+    clip: rect(83px, 9999px, 19px, 0);
+    -webkit-transform: skew(0.4deg);
+            transform: skew(0.4deg);
   }
   80% {
-    clip: rect(62px, 9999px, 87px, 0);
-    -webkit-transform: skew(0.94deg);
-            transform: skew(0.94deg);
+    clip: rect(75px, 9999px, 24px, 0);
+    -webkit-transform: skew(0.78deg);
+            transform: skew(0.78deg);
   }
   85% {
-    clip: rect(67px, 9999px, 60px, 0);
-    -webkit-transform: skew(0.17deg);
-            transform: skew(0.17deg);
+    clip: rect(30px, 9999px, 77px, 0);
+    -webkit-transform: skew(0.03deg);
+            transform: skew(0.03deg);
   }
   90% {
-    clip: rect(1px, 9999px, 55px, 0);
-    -webkit-transform: skew(0.6deg);
-            transform: skew(0.6deg);
+    clip: rect(26px, 9999px, 76px, 0);
+    -webkit-transform: skew(0.92deg);
+            transform: skew(0.92deg);
   }
   95% {
-    clip: rect(2px, 9999px, 88px, 0);
-    -webkit-transform: skew(0.87deg);
-            transform: skew(0.87deg);
+    clip: rect(96px, 9999px, 85px, 0);
+    -webkit-transform: skew(0.45deg);
+            transform: skew(0.45deg);
   }
   100% {
-    clip: rect(11px, 9999px, 60px, 0);
-    -webkit-transform: skew(0.67deg);
-            transform: skew(0.67deg);
+    clip: rect(46px, 9999px, 63px, 0);
+    -webkit-transform: skew(0.52deg);
+            transform: skew(0.52deg);
   }
 }
 
 @keyframes glitch-anim2 {
   0% {
-    clip: rect(82px, 9999px, 52px, 0);
-    -webkit-transform: skew(0.17deg);
-            transform: skew(0.17deg);
-  }
-  5% {
-    clip: rect(54px, 9999px, 65px, 0);
-    -webkit-transform: skew(0.28deg);
-            transform: skew(0.28deg);
-  }
-  10% {
-    clip: rect(59px, 9999px, 100px, 0);
-    -webkit-transform: skew(0.51deg);
-            transform: skew(0.51deg);
-  }
-  15% {
-    clip: rect(17px, 9999px, 82px, 0);
-    -webkit-transform: skew(0.99deg);
-            transform: skew(0.99deg);
-  }
-  20% {
-    clip: rect(78px, 9999px, 64px, 0);
-    -webkit-transform: skew(0.6deg);
-            transform: skew(0.6deg);
-  }
-  25% {
-    clip: rect(24px, 9999px, 52px, 0);
+    clip: rect(61px, 9999px, 14px, 0);
     -webkit-transform: skew(0.61deg);
             transform: skew(0.61deg);
   }
+  5% {
+    clip: rect(69px, 9999px, 57px, 0);
+    -webkit-transform: skew(0.64deg);
+            transform: skew(0.64deg);
+  }
+  10% {
+    clip: rect(44px, 9999px, 100px, 0);
+    -webkit-transform: skew(0.67deg);
+            transform: skew(0.67deg);
+  }
+  15% {
+    clip: rect(33px, 9999px, 88px, 0);
+    -webkit-transform: skew(0.66deg);
+            transform: skew(0.66deg);
+  }
+  20% {
+    clip: rect(68px, 9999px, 57px, 0);
+    -webkit-transform: skew(0.95deg);
+            transform: skew(0.95deg);
+  }
+  25% {
+    clip: rect(59px, 9999px, 58px, 0);
+    -webkit-transform: skew(0.42deg);
+            transform: skew(0.42deg);
+  }
   30% {
-    clip: rect(26px, 9999px, 2px, 0);
+    clip: rect(5px, 9999px, 29px, 0);
     -webkit-transform: skew(0.08deg);
             transform: skew(0.08deg);
   }
   35% {
-    clip: rect(65px, 9999px, 57px, 0);
-    -webkit-transform: skew(0.54deg);
-            transform: skew(0.54deg);
+    clip: rect(75px, 9999px, 58px, 0);
+    -webkit-transform: skew(0.58deg);
+            transform: skew(0.58deg);
   }
   40% {
-    clip: rect(82px, 9999px, 45px, 0);
-    -webkit-transform: skew(0.6deg);
-            transform: skew(0.6deg);
+    clip: rect(93px, 9999px, 75px, 0);
+    -webkit-transform: skew(0.37deg);
+            transform: skew(0.37deg);
   }
   45% {
-    clip: rect(17px, 9999px, 46px, 0);
-    -webkit-transform: skew(0.6deg);
-            transform: skew(0.6deg);
+    clip: rect(79px, 9999px, 60px, 0);
+    -webkit-transform: skew(0.68deg);
+            transform: skew(0.68deg);
   }
   50% {
-    clip: rect(63px, 9999px, 80px, 0);
-    -webkit-transform: skew(0.09deg);
-            transform: skew(0.09deg);
+    clip: rect(16px, 9999px, 27px, 0);
+    -webkit-transform: skew(0.16deg);
+            transform: skew(0.16deg);
   }
   55% {
-    clip: rect(49px, 9999px, 30px, 0);
-    -webkit-transform: skew(0.98deg);
-            transform: skew(0.98deg);
+    clip: rect(2px, 9999px, 17px, 0);
+    -webkit-transform: skew(0.57deg);
+            transform: skew(0.57deg);
   }
   60% {
-    clip: rect(34px, 9999px, 48px, 0);
-    -webkit-transform: skew(0.53deg);
-            transform: skew(0.53deg);
+    clip: rect(5px, 9999px, 53px, 0);
+    -webkit-transform: skew(0.51deg);
+            transform: skew(0.51deg);
   }
   65% {
-    clip: rect(90px, 9999px, 57px, 0);
-    -webkit-transform: skew(0.77deg);
-            transform: skew(0.77deg);
+    clip: rect(69px, 9999px, 40px, 0);
+    -webkit-transform: skew(0.35deg);
+            transform: skew(0.35deg);
   }
   70% {
-    clip: rect(63px, 9999px, 26px, 0);
-    -webkit-transform: skew(0.81deg);
-            transform: skew(0.81deg);
+    clip: rect(42px, 9999px, 51px, 0);
+    -webkit-transform: skew(0.4deg);
+            transform: skew(0.4deg);
   }
   75% {
-    clip: rect(16px, 9999px, 94px, 0);
-    -webkit-transform: skew(0.79deg);
-            transform: skew(0.79deg);
+    clip: rect(83px, 9999px, 19px, 0);
+    -webkit-transform: skew(0.4deg);
+            transform: skew(0.4deg);
   }
   80% {
-    clip: rect(62px, 9999px, 87px, 0);
-    -webkit-transform: skew(0.94deg);
-            transform: skew(0.94deg);
+    clip: rect(75px, 9999px, 24px, 0);
+    -webkit-transform: skew(0.78deg);
+            transform: skew(0.78deg);
   }
   85% {
-    clip: rect(67px, 9999px, 60px, 0);
-    -webkit-transform: skew(0.17deg);
-            transform: skew(0.17deg);
+    clip: rect(30px, 9999px, 77px, 0);
+    -webkit-transform: skew(0.03deg);
+            transform: skew(0.03deg);
   }
   90% {
-    clip: rect(1px, 9999px, 55px, 0);
-    -webkit-transform: skew(0.6deg);
-            transform: skew(0.6deg);
+    clip: rect(26px, 9999px, 76px, 0);
+    -webkit-transform: skew(0.92deg);
+            transform: skew(0.92deg);
   }
   95% {
-    clip: rect(2px, 9999px, 88px, 0);
-    -webkit-transform: skew(0.87deg);
-            transform: skew(0.87deg);
+    clip: rect(96px, 9999px, 85px, 0);
+    -webkit-transform: skew(0.45deg);
+            transform: skew(0.45deg);
   }
   100% {
-    clip: rect(11px, 9999px, 60px, 0);
-    -webkit-transform: skew(0.67deg);
-            transform: skew(0.67deg);
+    clip: rect(46px, 9999px, 63px, 0);
+    -webkit-transform: skew(0.52deg);
+            transform: skew(0.52deg);
   }
 }
 

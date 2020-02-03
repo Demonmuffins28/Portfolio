@@ -44,10 +44,11 @@ swup.on("contentReplaced", function() {
 	// Run these every contentReplace
 	navbar()
 	activePage()
+	aboutMeAnimation()
 
 	// Run this only on homepage
 	if (document.querySelector("#homeBody")) {
-		init()
+		animateHeader()
 	}
 })
 
@@ -284,4 +285,22 @@ function activePage() {
 	} else if (fileName == "contact.html") {
 		$("#contactPage").toggleClass("activePage")
 	}
+}
+
+function aboutMeAnimation() {
+	const aboutHeader = $(".aboutInfo h1")
+		.text()
+		.trim()
+
+	const headerLength = aboutHeader.length
+	let counter = 0
+	;(function aboutAnimation(count, i) {
+		setTimeout(() => {
+			$(".aboutInfo h1").text(aboutHeader.substring(0, count + 1))
+			count++
+			if (--i) {
+				aboutAnimation(count, i)
+			}
+		}, 100)
+	})(counter, headerLength)
 }

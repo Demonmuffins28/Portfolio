@@ -1,8 +1,17 @@
+$greenColor: #35f425;
+
 .skillsPage {
 	margin-left: 60px;
 	height: 100vh;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+}
+
+.aboutInfo {
+	h1 {
+		white-space: nowrap;
+		font-size: 5em;
+	}
 }
 
 .output {

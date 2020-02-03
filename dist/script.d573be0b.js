@@ -1298,10 +1298,11 @@ navbar();
 swup.on("contentReplaced", function () {
   // Run these every contentReplace
   navbar();
-  activePage(); // Run this only on homepage
+  activePage();
+  aboutMeAnimation(); // Run this only on homepage
 
   if (document.querySelector("#homeBody")) {
-    init();
+    animateHeader();
   }
 });
 
@@ -1514,6 +1515,23 @@ function activePage() {
   } else if (fileName == "contact.html") {
     $("#contactPage").toggleClass("activePage");
   }
+}
+
+function aboutMeAnimation() {
+  var aboutHeader = $(".aboutInfo h1").text().trim();
+  var headerLength = aboutHeader.length;
+  var counter = 0;
+
+  (function aboutAnimation(count, i) {
+    setTimeout(function () {
+      $(".aboutInfo h1").text(aboutHeader.substring(0, count + 1));
+      count++;
+
+      if (--i) {
+        aboutAnimation(count, i);
+      }
+    }, 100);
+  })(counter, headerLength);
 }
 },{"swup":"../node_modules/swup/lib/index.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
