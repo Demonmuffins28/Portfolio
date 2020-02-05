@@ -1,0 +1,28 @@
+$greenColor: #35f425;
+
+.about2Page {
+	margin-left: 60px;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.aboutInfo {
+	h1 {
+		white-space: nowrap;
+		font-size: 5em;
+	}
+}
+
+.output {
+	display: grid;
+	grid-template-rows: 1fr;
+
+	.aboutInfo {
+		margin-left: 15vh;
+	}
+}
+
+.sublime-text {
+	grid-column: 2;
+}

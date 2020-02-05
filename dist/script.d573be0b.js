@@ -1293,16 +1293,29 @@ var cardHTML = $("#about").html();
 var knifeHTML = $("#skills").html();
 var axeHTML = $("#work").html();
 var contactHTML = $("#contact").html();
+var boolClicked = false;
 init();
 navbar();
+activePage();
+animateHeader();
+skillsClicked();
 swup.on("contentReplaced", function () {
   // Run these every contentReplace
   navbar();
   activePage();
-  aboutMeAnimation(); // Run this only on homepage
+  init(); // Run this only on homepage
 
   if (document.querySelector("#homeBody")) {
     animateHeader();
+  }
+
+  if (document.querySelector("#aboutBody") || document.querySelector("#about2Body")) {
+    aboutMeAnimation();
+  }
+
+  if (document.querySelector("#skillsBody")) {// $("body").click(function() {
+    // 	$(".skillsContent").addClass("skillsContentRight")
+    // })
   }
 });
 
@@ -1409,8 +1422,6 @@ function init() {
     }, 4200);
   } //glitching();
 
-
-  animateHeader();
 } // function glitching() {
 //   var bg = $(".myName")[0];
 //   var count = 5;
@@ -1510,9 +1521,9 @@ function activePage() {
     $("#aboutPage").toggleClass("activePage");
   } else if (fileName == "skills.html") {
     $("#skillsPage").toggleClass("activePage");
-  } else if (fileName == "work.html") {
+  } else if (fileName == "myWork.html") {
     $("#workPage").toggleClass("activePage");
-  } else if (fileName == "contact.html") {
+  } else if (fileName == "about2.html") {
     $("#contactPage").toggleClass("activePage");
   }
 }
@@ -1532,6 +1543,25 @@ function aboutMeAnimation() {
       }
     }, 100);
   })(counter, headerLength);
+}
+
+function skillsClicked() {
+  $("body").click(function () {
+    if (boolClicked == false) {
+      $(".skillsContent").addClass("headerAnimate");
+      $(".halfPage").addClass("halfPageAnimate");
+      $(".skillsParag").addClass("fadeInLeft").removeClass("fadeOutLeft");
+      var randomNbr = Math.floor(Math.random() * (5 - 1)) + 1;
+      $(".paragraph" + randomNbr).addClass("hover");
+      boolClicked = true;
+    } else {
+      $(".skillsContent").removeClass("headerAnimate");
+      $(".halfPage").removeClass("halfPageAnimate");
+      $(".skillsParag").addClass("fadeOutLeft").removeClass("fadeInLeft");
+      $("span").removeClass("hover");
+      boolClicked = false;
+    }
+  });
 }
 },{"swup":"../node_modules/swup/lib/index.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];

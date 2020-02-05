@@ -1,28 +1,115 @@
 $greenColor: #35f425;
+$animate: all 0.2s ease-in-out;
 
 .skillsPage {
 	margin-left: 60px;
-	height: 100vh;
+	height: 100%;
+	background-color: #dbdbdb;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-}
-
-.aboutInfo {
-	h1 {
-		white-space: nowrap;
-		font-size: 5em;
-	}
-}
-
-.output {
-	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-template-rows: 1fr;
+	overflow: hidden;
 
-	.aboutInfo {
-		margin-left: 15vh;
+	.halfPage {
+		transition: 1.5s ease-in-out;
+		grid-column-start: 1;
+		grid-column-end: 3;
+		grid-row: 1;
+		height: 100%;
+		width: 100%;
+		background-color: #212121;
 	}
-}
 
-.sublime-text {
-	grid-column: 2;
+	.skillsContent {
+		transition: 1.65s cubic-bezier(0.74, 0, 0.59, 0.97);
+		grid-column-start: 2;
+		grid-column-end: 4;
+		grid-row: 1;
+		align-self: center;
+		text-align: center;
+
+		.bigSkillsHeader {
+			color: $greenColor;
+			font-size: 10em;
+			font-weight: 900;
+			line-height: 80%;
+			margin-left: -125px;
+		}
+	}
+
+	.skillsParag {
+		margin-left: 25vh;
+		margin-right: 25vh;
+		grid-column-start: 1;
+		grid-column-end: 4;
+		grid-row: 1;
+		font-style: medium;
+		font-weight: medium;
+		font-size: 1.2em;
+		color: #f3f3f3;
+		align-self: center;
+		visibility: hidden;
+		box-sizing: border-box;
+
+		.hover {
+			transition: $animate;
+			position: relative;
+			&:before,
+			&:after {
+				content: "";
+				position: absolute;
+				bottom: -1px;
+				width: 0px;
+				height: 1px;
+				margin: 5px 0 0;
+				transition: $animate;
+				transition-duration: 0.75s;
+				opacity: 0;
+				background-color: darken($greenColor, 5%);
+				right: 0;
+				animation: hovereffect 2s infinite;
+			}
+		}
+
+		@keyframes hovereffect {
+			0% {
+				width: 0%;
+				opacity: 0;
+				left: 0%;
+			}
+			40% {
+				width: 100%;
+				opacity: 1;
+				left: 0%;
+			}
+			60% {
+				width: 100%;
+				opacity: 1;
+				right: 0%;
+			}
+			100% {
+				width: 0;
+				opacity: 0;
+				right: 0%;
+			}
+		}
+	}
+
+	.fadeInLeft {
+		visibility: visible;
+	}
+
+	.fadeOutLeft {
+		visibility: visible;
+	}
+
+	.headerAnimate {
+		transition: 1.65s cubic-bezier(0.74, 0, 0.59, 0.97);
+		transform: translateX(80%);
+	}
+
+	.halfPageAnimate {
+		transition: 1.5s ease-in-out;
+		width: 180%;
+	}
 }

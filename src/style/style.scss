@@ -2,6 +2,8 @@
 @import "./about";
 @import "./skills";
 @import "./sublimeText";
+@import "./myWork";
+@import "./about2";
 @import url("https://fonts.googleapis.com/css?family=Exo:400,800&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Damion&display=swap");
 
@@ -191,6 +193,7 @@ html.is-animating .transition-fade {
 		font-size: 2.2em;
 		line-height: 48px;
 		color: #999999;
+		opacity: 0;
 	}
 
 	.button {

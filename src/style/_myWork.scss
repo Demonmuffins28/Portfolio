@@ -1,0 +1,15 @@
+.workPage {
+	margin-left: 60px;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+
+	.rightPage {
+		grid-column: 2;
+		background-color: #252525;
+		height: 100vh;
+		width: 100%;
+		border: 0px transparent;
+		box-shadow: 10px 0px 18px #000000;
+	}
+}
