@@ -65,6 +65,7 @@ swup.on("contentReplaced", function() {
 		// $("body").click(function() {
 		// 	$(".skillsContent").addClass("skillsContentRight")
 		// })
+		skillsClicked()
 	}
 })
 
@@ -321,15 +322,16 @@ function aboutMeAnimation() {
 }
 
 function skillsClicked() {
-	$("body").click(function() {
+	$(".bigSkillsHeader").click(function() {
 		if (boolClicked == false) {
 			$(".skillsContent").addClass("headerAnimate")
 			$(".halfPage").addClass("halfPageAnimate")
 			$(".skillsParag")
 				.addClass("fadeInLeft")
 				.removeClass("fadeOutLeft")
-			let randomNbr = Math.floor(Math.random() * (5 - 1)) + 1
-			$(".paragraph" + randomNbr).addClass("hover")
+			// Code to make a hover line go from left to right
+			// let randomNbr = Math.floor(Math.random() * (5 - 1)) + 1
+			// $(".paragraph" + randomNbr).addClass("hover")
 			boolClicked = true
 		} else {
 			$(".skillsContent").removeClass("headerAnimate")
@@ -337,7 +339,7 @@ function skillsClicked() {
 			$(".skillsParag")
 				.addClass("fadeOutLeft")
 				.removeClass("fadeInLeft")
-			$("span").removeClass("hover")
+			// $("span").removeClass("hover")
 			boolClicked = false
 		}
 	})

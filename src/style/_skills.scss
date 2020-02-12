@@ -4,7 +4,7 @@ $animate: all 0.2s ease-in-out;
 .skillsPage {
 	margin-left: 60px;
 	height: 100%;
-	background-color: #dbdbdb;
+	background-color: #999999; //#dbdbdb;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-template-rows: 1fr;
@@ -34,6 +34,10 @@ $animate: all 0.2s ease-in-out;
 			font-weight: 900;
 			line-height: 80%;
 			margin-left: -125px;
+
+			&:hover {
+				cursor: pointer;
+			}
 		}
 	}
 
@@ -50,49 +54,57 @@ $animate: all 0.2s ease-in-out;
 		align-self: center;
 		visibility: hidden;
 		box-sizing: border-box;
+		line-height: 20px;
 
-		.hover {
-			transition: $animate;
-			position: relative;
-			&:before,
-			&:after {
-				content: "";
-				position: absolute;
-				bottom: -1px;
-				width: 0px;
-				height: 1px;
-				margin: 5px 0 0;
-				transition: $animate;
-				transition-duration: 0.75s;
-				opacity: 0;
-				background-color: darken($greenColor, 5%);
-				right: 0;
-				animation: hovereffect 2s infinite;
-			}
+		h2 {
+			color: $greenColor;
+			font-size: 2em;
+			line-height: 30px;
+			margin-bottom: 15px;
 		}
 
-		@keyframes hovereffect {
-			0% {
-				width: 0%;
-				opacity: 0;
-				left: 0%;
-			}
-			40% {
-				width: 100%;
-				opacity: 1;
-				left: 0%;
-			}
-			60% {
-				width: 100%;
-				opacity: 1;
-				right: 0%;
-			}
-			100% {
-				width: 0;
-				opacity: 0;
-				right: 0%;
-			}
-		}
+		// 	.hover {
+		// 		transition: $animate;
+		// 		position: relative;
+		// 		&:before,
+		// 		&:after {
+		// 			content: "";
+		// 			position: absolute;
+		// 			bottom: -1px;
+		// 			width: 0px;
+		// 			height: 1px;
+		// 			margin: 5px 0 0;
+		// 			transition: $animate;
+		// 			transition-duration: 0.75s;
+		// 			opacity: 0;
+		// 			background-color: darken($greenColor, 5%);
+		// 			right: 30%;
+		// 			animation: hovereffect 2s infinite;
+		// 		}
+		// 	}
+
+		// 	@keyframes hovereffect {
+		// 		0% {
+		// 			width: 0%;
+		// 			opacity: 0;
+		// 			left: 0%;
+		// 		}
+		// 		40% {
+		// 			width: 70%;
+		// 			opacity: 1;
+		// 			left: 0%;
+		// 		}
+		// 		60% {
+		// 			width: 70%;
+		// 			opacity: 1;
+		// 			right: 30%;
+		// 		}
+		// 		100% {
+		// 			width: 0;
+		// 			opacity: 0;
+		// 			right: 30%;
+		// 		}
+		// 	}
 	}
 
 	.fadeInLeft {

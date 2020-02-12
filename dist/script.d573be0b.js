@@ -1313,9 +1313,11 @@ swup.on("contentReplaced", function () {
     aboutMeAnimation();
   }
 
-  if (document.querySelector("#skillsBody")) {// $("body").click(function() {
+  if (document.querySelector("#skillsBody")) {
+    // $("body").click(function() {
     // 	$(".skillsContent").addClass("skillsContentRight")
     // })
+    skillsClicked();
   }
 });
 
@@ -1546,19 +1548,20 @@ function aboutMeAnimation() {
 }
 
 function skillsClicked() {
-  $("body").click(function () {
+  $(".bigSkillsHeader").click(function () {
     if (boolClicked == false) {
       $(".skillsContent").addClass("headerAnimate");
       $(".halfPage").addClass("halfPageAnimate");
-      $(".skillsParag").addClass("fadeInLeft").removeClass("fadeOutLeft");
-      var randomNbr = Math.floor(Math.random() * (5 - 1)) + 1;
-      $(".paragraph" + randomNbr).addClass("hover");
+      $(".skillsParag").addClass("fadeInLeft").removeClass("fadeOutLeft"); // Code to make a hover line go from left to right
+      // let randomNbr = Math.floor(Math.random() * (5 - 1)) + 1
+      // $(".paragraph" + randomNbr).addClass("hover")
+
       boolClicked = true;
     } else {
       $(".skillsContent").removeClass("headerAnimate");
       $(".halfPage").removeClass("halfPageAnimate");
-      $(".skillsParag").addClass("fadeOutLeft").removeClass("fadeInLeft");
-      $("span").removeClass("hover");
+      $(".skillsParag").addClass("fadeOutLeft").removeClass("fadeInLeft"); // $("span").removeClass("hover")
+
       boolClicked = false;
     }
   });
@@ -1591,7 +1594,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52961" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56245" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
