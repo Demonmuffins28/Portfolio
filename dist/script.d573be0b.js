@@ -1552,7 +1552,7 @@ function skillsClicked() {
     if (boolClicked == false) {
       $(".skillsContent").addClass("headerAnimate");
       $(".halfPage").addClass("halfPageAnimate");
-      $(".skillsParag").addClass("fadeInLeft").removeClass("fadeOutLeft"); // Code to make a hover line go from left to right
+      $(".skillsParag").addClass("animate"); // Code to make a hover line go from left to right
       // let randomNbr = Math.floor(Math.random() * (5 - 1)) + 1
       // $(".paragraph" + randomNbr).addClass("hover")
 
@@ -1560,7 +1560,7 @@ function skillsClicked() {
     } else {
       $(".skillsContent").removeClass("headerAnimate");
       $(".halfPage").removeClass("halfPageAnimate");
-      $(".skillsParag").addClass("fadeOutLeft").removeClass("fadeInLeft"); // $("span").removeClass("hover")
+      $(".skillsParag").removeClass("animate"); // $("span").removeClass("hover")
 
       boolClicked = false;
     }

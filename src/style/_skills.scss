@@ -11,7 +11,7 @@ $animate: all 0.2s ease-in-out;
 	overflow: hidden;
 
 	.halfPage {
-		transition: 1.5s ease-in-out;
+		transition: 1.4s cubic-bezier(0.7, 0, 0.3, 1) 0ms;
 		grid-column-start: 1;
 		grid-column-end: 3;
 		grid-row: 1;
@@ -21,7 +21,7 @@ $animate: all 0.2s ease-in-out;
 	}
 
 	.skillsContent {
-		transition: 1.65s cubic-bezier(0.74, 0, 0.59, 0.97);
+		transition: 1.2s cubic-bezier(0.7, 0, 0.3, 1) 0ms;
 		grid-column-start: 2;
 		grid-column-end: 4;
 		grid-row: 1;
@@ -34,6 +34,34 @@ $animate: all 0.2s ease-in-out;
 			font-weight: 900;
 			line-height: 80%;
 			margin-left: -125px;
+			position: relative;
+
+			&::after {
+				content: "";
+				position: absolute;
+				bottom: -4px;
+				right: 200px;
+				width: 250px;
+				height: 2px;
+				margin: 5px 0 0;
+				background-color: darken($greenColor, 5%);
+			}
+
+			::after {
+				font-size: 18px;
+				font-weight: 500;
+				content: "click me";
+				position: absolute;
+				bottom: 35px;
+				right: 210px;
+				height: 10px;
+				margin: 5px 0 0;
+			}
+
+			::selection {
+				color: none;
+				background: none;
+			}
 
 			&:hover {
 				cursor: pointer;
@@ -52,9 +80,12 @@ $animate: all 0.2s ease-in-out;
 		font-size: 1.2em;
 		color: #f3f3f3;
 		align-self: center;
-		visibility: hidden;
 		box-sizing: border-box;
 		line-height: 20px;
+		opacity: 0;
+		transform: translateX(-750px);
+		transition: all 1s;
+		transition-delay: 0.4s;
 
 		h2 {
 			color: $greenColor;
@@ -107,21 +138,19 @@ $animate: all 0.2s ease-in-out;
 		// 	}
 	}
 
-	.fadeInLeft {
-		visibility: visible;
-	}
-
-	.fadeOutLeft {
-		visibility: visible;
+	.skillsParag.animate {
+		opacity: 1;
+		transform: translateX(0);
+		transition-delay: 0.4s;
 	}
 
 	.headerAnimate {
-		transition: 1.65s cubic-bezier(0.74, 0, 0.59, 0.97);
+		transition: 1.2s cubic-bezier(0.7, 0, 0.3, 1) 0ms;
 		transform: translateX(80%);
 	}
 
 	.halfPageAnimate {
-		transition: 1.5s ease-in-out;
+		transition: 1.4s cubic-bezier(0.7, 0, 0.3, 1) 0ms;
 		width: 180%;
 	}
 }
