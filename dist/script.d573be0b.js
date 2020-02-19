@@ -1313,10 +1313,11 @@ swup.on("contentReplaced", function () {
     aboutMeAnimation();
   }
 
-  if (document.querySelector("#skillsBody")) {// $("body").click(function() {
+  if (document.querySelector("#skillsBody")) {
+    // $("body").click(function() {
     // 	$(".skillsContent").addClass("skillsContentRight")
     // })
-    //skillsClicked()
+    skillsClicked();
   }
 });
 

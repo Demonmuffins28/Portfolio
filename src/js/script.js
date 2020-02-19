@@ -65,7 +65,7 @@ swup.on("contentReplaced", function() {
 		// $("body").click(function() {
 		// 	$(".skillsContent").addClass("skillsContentRight")
 		// })
-		//skillsClicked()
+		skillsClicked()
 	}
 })
 
