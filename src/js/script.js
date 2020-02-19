@@ -44,7 +44,7 @@ navbar()
 activePage()
 animateHeader()
 
-//skillsClicked()
+skillsClicked()
 
 swup.on("contentReplaced", function() {
 	// Run these every contentReplace

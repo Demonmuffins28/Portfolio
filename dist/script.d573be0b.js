@@ -1297,8 +1297,8 @@ var boolClicked = false;
 init();
 navbar();
 activePage();
-animateHeader(); //skillsClicked()
-
+animateHeader();
+skillsClicked();
 swup.on("contentReplaced", function () {
   // Run these every contentReplace
   navbar();
