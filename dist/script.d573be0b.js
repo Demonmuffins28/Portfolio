@@ -1523,7 +1523,7 @@ function activePage() {
     $("#aboutPage").toggleClass("activePage");
   } else if (fileName == "skills.html") {
     $("#skillsPage").toggleClass("activePage");
-  } else if (fileName == "myWork.html") {
+  } else if (fileName == "mywork.html") {
     $("#workPage").toggleClass("activePage");
   } else if (fileName == "contact.html") {
     $("#contactPage").toggleClass("activePage");
