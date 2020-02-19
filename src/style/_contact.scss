@@ -1,0 +1,150 @@
+$greenColor: #35f425;
+
+.contactPage {
+	margin-left: 60px;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+
+	.rightPage {
+		grid-column: 2;
+		height: 100vh;
+		width: 100%;
+		//border: 0px transparent;
+		//box-shadow: 10px 0px 18px #000000;
+	}
+
+	.leftPage {
+		align-self: center;
+		display: flex;
+		justify-content: center;
+
+		.form {
+			width: 90%;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 1fr 6vh 6vh 20vh;
+			grid-row-gap: 8px;
+			grid-column-gap: 15px;
+
+			div {
+				grid-column-start: 1;
+				grid-column-end: 3;
+			}
+
+			h1 {
+				font-weight: 800;
+				font-size: 4em;
+				line-height: 150%;
+				color: $greenColor;
+			}
+
+			p {
+				color: #f3f3f3;
+				font-size: 1.05em;
+			}
+
+			.emailAddr {
+				margin-top: 2vh;
+				margin-bottom: 2vh;
+				text-decoration: underline $greenColor;
+			}
+
+			input,
+			textarea {
+				background-color: rgba($color: #5e5e5e, $alpha: 0.2); //#2c2c2c;
+				border: none;
+				font-size: 1.05em;
+				padding-left: 15px;
+				padding-right: 15px;
+				color: #f3f3f3;
+
+				&::placeholder {
+					font-weight: bold;
+					font-size: 1.3em;
+					text-align: right;
+					color: $greenColor;
+					opacity: 1;
+					letter-spacing: 2px;
+				}
+
+				&:invalid {
+					box-shadow: none;
+				}
+
+				&:focus {
+					border: 1px solid $greenColor;
+				}
+			}
+
+			.name {
+				grid-column: 1;
+			}
+			.email {
+				grid-column: 2;
+			}
+			.subject {
+				grid-column: 1;
+				grid-column-end: 3;
+			}
+			.message {
+				grid-column: 1;
+				grid-column-end: 3;
+				vertical-align: top;
+				padding-top: 10px;
+				min-width: 100%;
+				resize: none;
+
+				&::placeholder {
+					line-height: 30vh;
+				}
+			}
+
+			.button {
+				text-decoration: none;
+				color: #35f425;
+				font-size: 1.3em;
+				margin-top: 1em;
+				margin-left: 0.5em;
+				width: 160px;
+
+				svg {
+					margin-top: -0.5em;
+					margin-left: -0.5em;
+					position: absolute;
+					height: 45px;
+					width: 95px;
+				}
+
+				rect {
+					fill: none;
+					stroke: #35f425;
+					stroke-width: 2;
+					stroke-dasharray: 422, 0;
+					transition: all 0.35s linear;
+				}
+			}
+
+			.button:hover {
+				cursor: pointer;
+				background-color: none;
+				font-weight: 600;
+
+				rect {
+					stroke-width: 5;
+					stroke-dasharray: 15, 125;
+					stroke-dashoffset: 48;
+					transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+				}
+			}
+		}
+	}
+
+	.rightPage {
+		overflow: hidden;
+
+		iframe {
+			margin-left: -50%;
+		}
+	}
+}

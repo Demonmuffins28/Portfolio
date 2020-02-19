@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title></title>
+		<meta name="description" content="" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale = 1, maximum-scale = 1, user-scalable = no"
+		/>
+		<link rel="stylesheet" href="./style/style.css" />
+	</head>
+
+	<body>
+		<div id="nav-placeholder"></div>
+		<main id="swup" class="transition-fade">
+			<section class="contactPage">
+				<div class="leftPage">
+					<form class="form">
+						<div>
+							<h1>Let's get in touch</h1>
+							<p>
+								I’m looking for every opportunity to make some freelancing work. If you have any
+								question, want more info or simply want to get started with your project, contact me
+								using the form bellow or by email at :
+							</p>
+							<p class="emailAddr">marco.lalonde28@gmail.com</p>
+						</div>
+						<input class="name" type="text" placeholder="Name" name="name" required />
+						<input class="email" type="text" placeholder="Email" name="email" required />
+						<input class="subject" type="text" placeholder="Subject" name="subject" required />
+						<textarea
+							rows="4"
+							class="message"
+							type="text"
+							placeholder="Message"
+							name="message"
+							required
+						></textarea>
+
+						<a href="./index.html" class="button">
+							<svg>
+								<rect x="0" y="0" fill="none" width="100%" height="100%" /></svg
+							>SEND IT
+						</a>
+					</form>
+				</div>
+				<div class="rightPage">
+					<iframe
+						src="https://snazzymaps.com/embed/211445"
+						width="200%"
+						height="100%"
+						style="border:none;"
+					></iframe>
+				</div>
+			</section>
+		</main>
+		<script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
+		<script
+			type="text/javascript"
+			src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+		></script>
+		<script src="./js/script.js"></script>
+		<script>
+			$(function() {
+				$("#nav-placeholder").load("./navbar.html")
+			})
+		</script>
+	</body>
+</html>

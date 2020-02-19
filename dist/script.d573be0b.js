@@ -1297,8 +1297,8 @@ var boolClicked = false;
 init();
 navbar();
 activePage();
-animateHeader();
-skillsClicked();
+animateHeader(); //skillsClicked()
+
 swup.on("contentReplaced", function () {
   // Run these every contentReplace
   navbar();
@@ -1313,11 +1313,10 @@ swup.on("contentReplaced", function () {
     aboutMeAnimation();
   }
 
-  if (document.querySelector("#skillsBody")) {
-    // $("body").click(function() {
+  if (document.querySelector("#skillsBody")) {// $("body").click(function() {
     // 	$(".skillsContent").addClass("skillsContentRight")
     // })
-    skillsClicked();
+    //skillsClicked()
   }
 });
 
@@ -1525,27 +1524,26 @@ function activePage() {
     $("#skillsPage").toggleClass("activePage");
   } else if (fileName == "myWork.html") {
     $("#workPage").toggleClass("activePage");
-  } else if (fileName == "about2.html") {
+  } else if (fileName == "contact.html") {
     $("#contactPage").toggleClass("activePage");
   }
-}
+} // function aboutMeAnimation() {
+// 	const aboutHeader = $(".aboutInfo h1")
+// 		.text()
+// 		.trim()
+// 	const headerLength = aboutHeader.length
+// 	let counter = 0
+// 	;(function aboutAnimation(count, i) {
+// 		setTimeout(() => {
+// 			$(".aboutInfo h1").text(aboutHeader.substring(0, count + 1))
+// 			count++
+// 			if (--i) {
+// 				aboutAnimation(count, i)
+// 			}
+// 		}, 100)
+// 	})(counter, headerLength)
+// }
 
-function aboutMeAnimation() {
-  var aboutHeader = $(".aboutInfo h1").text().trim();
-  var headerLength = aboutHeader.length;
-  var counter = 0;
-
-  (function aboutAnimation(count, i) {
-    setTimeout(function () {
-      $(".aboutInfo h1").text(aboutHeader.substring(0, count + 1));
-      count++;
-
-      if (--i) {
-        aboutAnimation(count, i);
-      }
-    }, 100);
-  })(counter, headerLength);
-}
 
 function skillsClicked() {
   $(".bigSkillsHeader").click(function () {
@@ -1594,7 +1592,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56245" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53250" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -12,4 +12,13 @@
 		border: 0px transparent;
 		box-shadow: 10px 0px 18px #000000;
 	}
+
+	.underConst {
+		position: absolute;
+		grid-column: 1;
+		grid-column-end: 3;
+		align-self: center;
+		justify-self: center;
+		font-size: 4rem;
+	}
 }
