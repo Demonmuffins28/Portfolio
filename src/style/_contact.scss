@@ -27,10 +27,6 @@ $greenColor: #35f425;
 			grid-row-gap: 8px;
 			grid-column-gap: 15px;
 
-			input:-webkit-autofill {
-				-webkit-text-fill-color: yellow !important;
-			}
-
 			div {
 				grid-column-start: 1;
 				grid-column-end: 3;
@@ -70,6 +66,10 @@ $greenColor: #35f425;
 					color: $greenColor;
 					opacity: 1;
 					letter-spacing: 2px;
+				}
+
+				&:-webkit-autofill {
+					-webkit-text-fill-color: yellow !important;
 				}
 
 				&:invalid {
