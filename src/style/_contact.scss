@@ -26,7 +26,11 @@ $greenColor: #35f425;
 			grid-template-rows: 1fr 6vh 6vh 20vh;
 			grid-row-gap: 8px;
 			grid-column-gap: 15px;
-			
+
+			input:-webkit-autofill {
+				-webkit-text-fill-color: yellow !important;
+			}
+
 			div {
 				grid-column-start: 1;
 				grid-column-end: 3;
