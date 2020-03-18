@@ -290,7 +290,7 @@ function navbar() {
 function activePage() {
 	$(".activePage").toggleClass("activePage")
 	var fileName = location.pathname.split("/").slice(-1)
-	if (fileName == "index.html") {
+	if (fileName == "index.html" || fileName == "") {
 		$("#homePage").toggleClass("activePage")
 	} else if (fileName == "about.html") {
 		$("#aboutPage").toggleClass("activePage")
