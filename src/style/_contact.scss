@@ -26,21 +26,7 @@ $greenColor: #35f425;
 			grid-template-rows: 1fr 6vh 6vh 20vh;
 			grid-row-gap: 8px;
 			grid-column-gap: 15px;
-
-			input:-webkit-autofill,
-			input:-webkit-autofill:hover,
-			input:-webkit-autofill:focus,
-			textarea:-webkit-autofill,
-			textarea:-webkit-autofill:hover,
-			textarea:-webkit-autofill:focus,
-			select:-webkit-autofill,
-			select:-webkit-autofill:hover,
-			select:-webkit-autofill:focus {
-				border: 1px solid $greenColor;
-				-webkit-text-fill-color: #f3f3f3;
-				background-color: rgba($color: #5e5e5e, $alpha: 0.2);
-			}
-
+			
 			div {
 				grid-column-start: 1;
 				grid-column-end: 3;
