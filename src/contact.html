@@ -32,7 +32,8 @@
 							type="text"
 							placeholder="Name"
 							name="name"
-							autocomplete="new-password"
+							readonly="readonly"
+							onfocus="this.removeAttribute('readonly');"
 							required
 						/>
 						<input
@@ -40,7 +41,8 @@
 							type="text"
 							placeholder="Email"
 							name="email"
-							autocomplete="false"
+							readonly="readonly"
+							onfocus="this.removeAttribute('readonly');"
 							required
 						/>
 						<input class="subject" type="text" placeholder="Subject" name="subject" required />
