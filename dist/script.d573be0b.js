@@ -766,8 +766,8 @@ var renderPage = function renderPage(page, popstate) {
 	}, 10);
 
 	// handle end of animation
-	var animationPromises = this.getAnimationPromises('in');
 	if (!popstate || this.options.animateHistoryBrowsing) {
+		var animationPromises = this.getAnimationPromises('in');
 		Promise.all(animationPromises).then(function () {
 			_this.triggerEvent('animationInDone');
 			_this.triggerEvent('transitionEnd', popstate);
@@ -1518,7 +1518,7 @@ function activePage() {
   $(".activePage").toggleClass("activePage");
   var fileName = location.pathname.split("/").slice(-1);
 
-  if (fileName == "index.html") {
+  if (fileName == "index.html" || fileName == "") {
     $("#homePage").toggleClass("activePage");
   } else if (fileName == "about.html") {
     $("#aboutPage").toggleClass("activePage");
@@ -1594,7 +1594,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55679" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62573" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

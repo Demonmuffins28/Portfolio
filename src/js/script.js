@@ -29,7 +29,7 @@ const originalLetter = [
 	"p",
 	"e",
 	"r",
-	"."
+	".",
 ]
 const tentHTML = $("#home").html()
 const cardHTML = $("#about").html()
@@ -46,7 +46,7 @@ animateHeader()
 
 skillsClicked()
 
-swup.on("contentReplaced", function() {
+swup.on("contentReplaced", function () {
 	// Run these every contentReplace
 	navbar()
 	activePage()
@@ -74,7 +74,7 @@ function init() {
 	var swipe = new Hammer(document)
 
 	if ($(window).width() <= 1100) {
-		swipe.on("panright  panleft", function(e) {
+		swipe.on("panright  panleft", function (e) {
 			e.preventDefault()
 			if (e.type == "panright") {
 				// open menu
@@ -91,9 +91,9 @@ function init() {
 		$("#homeBody").css("margin-left", "60px")
 	}
 
-	$(window).resize(function() {
+	$(window).resize(function () {
 		if ($(window).width() <= 1100) {
-			swipe.on("panright  panleft", function(e) {
+			swipe.on("panright  panleft", function (e) {
 				e.preventDefault()
 				if (e.type == "panright") {
 					// open menu
@@ -114,7 +114,7 @@ function init() {
 	var fileName = location.pathname.split("/").slice(-1)
 	if (fileName == "about.html") {
 		// Star-1
-		setInterval(function() {
+		setInterval(function () {
 			var randomColumn = Math.floor(Math.random() * 21)
 			var randomRow = Math.floor(Math.random() * 21)
 			$(".star-1").css("grid-column", randomColumn)
@@ -122,7 +122,7 @@ function init() {
 		}, 3000)
 
 		// Star-2
-		setInterval(function() {
+		setInterval(function () {
 			var randomColumn = Math.floor(Math.random() * 21)
 			var randomRow = Math.floor(Math.random() * 21)
 			$(".star-2").css("grid-column", randomColumn)
@@ -130,7 +130,7 @@ function init() {
 		}, 4500)
 
 		// Star-3
-		setInterval(function() {
+		setInterval(function () {
 			var randomColumn = Math.floor(Math.random() * 21)
 			var randomRow = Math.floor(Math.random() * 21)
 			$(".star-3").css("grid-column", randomColumn)
@@ -138,7 +138,7 @@ function init() {
 		}, 3500)
 
 		// Star-4
-		setInterval(function() {
+		setInterval(function () {
 			var randomColumn = Math.floor(Math.random() * 21)
 			var randomRow = Math.floor(Math.random() * 21)
 			$(".star-4").css("grid-column", randomColumn)
@@ -146,7 +146,7 @@ function init() {
 		}, 4000)
 
 		// Star-5
-		setInterval(function() {
+		setInterval(function () {
 			var randomColumn = Math.floor(Math.random() * 21)
 			var randomRow = Math.floor(Math.random() * 21)
 			$(".star-5").css("grid-column", randomColumn)
@@ -154,7 +154,7 @@ function init() {
 		}, 5000)
 
 		// Star-6
-		setInterval(function() {
+		setInterval(function () {
 			var randomColumn = Math.floor(Math.random() * 21)
 			var randomRow = Math.floor(Math.random() * 21)
 			$(".star-6").css("grid-column", randomColumn)
@@ -162,7 +162,7 @@ function init() {
 		}, 2500)
 
 		// Star-7
-		setInterval(function() {
+		setInterval(function () {
 			var randomColumn = Math.floor(Math.random() * 21)
 			var randomRow = Math.floor(Math.random() * 21)
 			$(".star-7").css("grid-column", randomColumn)
@@ -170,7 +170,7 @@ function init() {
 		}, 3300)
 
 		// Star-8
-		setInterval(function() {
+		setInterval(function () {
 			var randomColumn = Math.floor(Math.random() * 21)
 			var randomRow = Math.floor(Math.random() * 21)
 			$(".star-8").css("grid-column", randomColumn)
@@ -208,9 +208,7 @@ function animateHeader() {
 	$(".myName").css("visibility", "hidden")
 	;(function eachLetter(letterIndex) {
 		// Have the function for each letter queue and change letter
-		$(".text-animated")
-			.addClass("myName")
-			.css("color", "#f3f3f3")
+		$(".text-animated").addClass("myName").css("color", "#f3f3f3")
 
 		setTimeout(() => {
 			;(function loadHeader(nthChild, i) {
@@ -240,46 +238,46 @@ function animateHeader() {
 function navbar() {
 	if ($(window).width() >= 700) {
 		$("#homePage").hover(
-			function() {
+			function () {
 				$("#home").text("HOME")
 			},
-			function() {
+			function () {
 				$("#home").html(tentHTML)
 				//$("#home").html('<img class="home" src="../image/tent 1.*.svg" />');
 			}
 		)
 		$("#aboutPage").hover(
-			function() {
+			function () {
 				$("#about").text("ABOUT")
 			},
-			function() {
+			function () {
 				$("#about").html(cardHTML)
 				//$("#about").html('<img class="about" src="../image/id-card-solid 1.svg" />');
 			}
 		)
 		$("#skillsPage").hover(
-			function() {
+			function () {
 				$("#skills").text("SKILLS")
 			},
-			function() {
+			function () {
 				$("#skills").html(knifeHTML)
 				//$("#skills").html('<img class="skills" src="../image/knife 1.svg" />');
 			}
 		)
 		$("#workPage").hover(
-			function() {
+			function () {
 				$("#work").text("MY WORK")
 			},
-			function() {
+			function () {
 				$("#work").html(axeHTML)
 				//$("#work").html('<img class="work" src="../image/axe 1.svg" />');
 			}
 		)
 		$("#contactPage").hover(
-			function() {
+			function () {
 				$("#contact").text("CONTACT")
 			},
-			function() {
+			function () {
 				$("#contact").html(contactHTML)
 				//$("#contact").html('<img class="contact" src="../image/contact 1.svg" />');
 			}
@@ -290,7 +288,7 @@ function navbar() {
 function activePage() {
 	$(".activePage").toggleClass("activePage")
 	var fileName = location.pathname.split("/").slice(-1)
-	if (fileName == "index.html") {
+	if (fileName == "index.html" || fileName == "") {
 		$("#homePage").toggleClass("activePage")
 	} else if (fileName == "about.html") {
 		$("#aboutPage").toggleClass("activePage")
@@ -322,7 +320,7 @@ function activePage() {
 // }
 
 function skillsClicked() {
-	$(".bigSkillsHeader").click(function() {
+	$(".bigSkillsHeader").click(function () {
 		if (boolClicked == false) {
 			$(".skillsContent").addClass("headerAnimate")
 			$(".halfPage").addClass("halfPageAnimate")
