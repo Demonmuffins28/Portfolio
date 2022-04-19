@@ -58,7 +58,7 @@ swup.on("contentReplaced", function () {
 	}
 
 	if (document.querySelector("#aboutBody") || document.querySelector("#about2Body")) {
-		aboutMeAnimation()
+		//aboutMeAnimation()
 	}
 
 	if (document.querySelector("#skillsBody")) {
@@ -73,13 +73,13 @@ function init() {
 	// For navbar hiding on smaller screen
 	var swipe = new Hammer(document)
 
-	if ($(window).width() <= 1100) {
+	if ($(window).width() <= 500) {
 		swipe.on("panright  panleft", function (e) {
 			e.preventDefault()
 			if (e.type == "panright") {
 				// open menu
 				$("#nav-placeholder").css("transform", "translateX(0px)")
-				$("#homeBody").css("margin-left", "60px")
+				$("#homeBody").css("margin-left", "0px")
 			} else {
 				// close/hide menu
 				$("#nav-placeholder").css("transform", "translateX(-60px)")
@@ -92,7 +92,9 @@ function init() {
 	}
 
 	$(window).resize(function () {
-		if ($(window).width() <= 1100) {
+		if ($(window).width() <= 500) {
+			$("#nav-placeholder").css("transform", "translateX(-60px)")
+			$("#homeBody").css("margin-left", "-60px")
 			swipe.on("panright  panleft", function (e) {
 				e.preventDefault()
 				if (e.type == "panright") {
@@ -107,7 +109,8 @@ function init() {
 			})
 		} else {
 			$("#nav-placeholder").css("transform", "translateX(0px)")
-			//$("#homeBody").css("margin-left", "0px");
+			$("#homeBody").css("margin-left", "0px")
+			swipe.off("panright  panleft")
 		}
 	})
 

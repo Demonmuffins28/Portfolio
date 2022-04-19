@@ -281,20 +281,14 @@ html.is-animating .transition-fade {
 		grid-column-start: 1;
 
 		h1 {
-			font-size: 3em;
+			font-size: 3.8em;
 		}
 
 		p {
-			font-size: 1.2em;
+			font-size: 2em;
 			line-height: 20px;
 			margin-top: 5vh;
 			margin-bottom: 2vh;
-		}
-
-		button {
-			width: 125px;
-			height: 35px;
-			font-size: 1em;
 		}
 	}
 
@@ -322,6 +316,40 @@ html.is-animating .transition-fade {
 				top: 10px;
 				left: 0px;
 				text-shadow: 2px 0 #ff00c1;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 500px) {
+		.homeHeader {
+		h1 {
+			font-size: 2.5em;
+		}
+
+		p {
+			font-size: 1.5em;
+		}
+
+		.button {
+			width: 110px;
+			height: 30px;
+			font-size: 1em;
+
+			svg {
+				margin-top: -0.5em;
+				margin-left: -0.5em;
+				position: absolute;
+				height: 35px;
+				width: 125px;
+			}
+
+			rect {
+				fill: none;
+				stroke: #35f425;
+				stroke-width: 2;
+				stroke-dasharray: 422, 0;
+				transition: all 0.35s linear;
 			}
 		}
 	}
