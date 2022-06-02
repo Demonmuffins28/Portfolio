@@ -9,15 +9,14 @@ $shadow: #533d4a;
 	background-size: cover;
 	display: grid;
 	grid-template-columns: 0px 1fr 1.5fr 2fr;
+	transition: 0.5s;
 }
 
 .aboutInfo {
-	grid-column-start: 2;
-	grid-column-end: 4;
-	grid-row: 1;
 	margin-left: 25vh;
 	color: #f3f3f3;
 	align-self: center;
+	transition: 0.5s;
 
 	h1 {
 		color: $greenColor;
@@ -27,6 +26,7 @@ $shadow: #533d4a;
 	}
 
 	p {
+		width: 40em;
 		margin-top: 5vh;
 		font-style: normal;
 		font-weight: normal;
@@ -78,9 +78,9 @@ $shadow: #533d4a;
 }
 
 .star {
+	position: absolute !important;
+	inset: 0 0 20em 50%;
 	grid-column-start: 4;
-	width: 600px;
-	height: 450px;
 	display: grid;
 	grid-template-columns: repeat(20, 1fr);
 	grid-template-rows: repeat(20, 1fr);
@@ -153,5 +153,69 @@ $shadow: #533d4a;
 	100% {
 		transform: rotate(0deg);
 		opacity: 0;
+	}
+}
+
+@media screen and (max-width: 920px) {
+	.aboutInfo {
+		margin-left: 100px;
+
+		h1 {
+			font-size: 4.5em !important;
+		}
+
+		p {
+			font-size: 1em;
+			max-width: 40em;
+		}
+	}
+}
+
+@media screen and (max-width: 736px) {
+	.star {
+		inset: 0 0 20em 60px;
+	}
+
+	.aboutInfo {
+		h1 {
+			font-size: 3.5em !important;
+		}
+		p {
+			max-width: 25em;
+		}
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.star {
+		margin-left: 80px;
+		max-width: 80%;
+		overflow: hidden;
+	}
+
+	.aboutInfo {
+		margin-left: 100px;
+		margin-top: 5vh;
+		align-self: center;
+
+		h1 {
+			font-size: 3em !important;
+		}
+
+		p {
+			font-size: 1em;
+			max-width: 20em;
+		}
+
+		.button {
+			width: 110px;
+			height: 30px;
+			font-size: 1em;
+
+			svg {
+				height: 35px;
+				width: 125px;
+			}
+		}
 	}
 }
